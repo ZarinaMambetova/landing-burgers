@@ -1,0 +1,20 @@
+.section__first_screen {
+        background: url(../../images/bg/texture.png) ;
+        width: 100%;
+        height: 100vh;
+        min-height: 640px;
+        background-size: cover;
+}
+
+
+.main__text_first_row {
+color: #f9b43b;
+        margin-top: 135px;
+        margin-left: 15px;
+}
+
+.main__text_second_row {
+        color: #ffffff;
+        font-family: 'lifehackmedium';
+        font-size: 65px;
+}

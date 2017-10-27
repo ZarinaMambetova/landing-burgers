@@ -1,0 +1,66 @@
+.header {
+    padding: 7px 16px 10px 15px;
+}
+
+.header__navigation {
+display: flex;
+}
+
+.navigation-list {
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "ubuntumedium";
+    font-size: 13px;
+    justify-content: space-around;
+    
+}
+
+.navigation__item{
+display: inline-flex;
+align-items: center;
+padding-right: 8px;
+padding-left: 2px;
+}
+
+
+
+
+.navigation__item:before {
+    content: "";
+    display: flex;
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.navigation__item:first-child::before {
+    content: none;
+}
+
+.header__batton {
+    color: #ffffff;
+    font-family: "ubuntumedium";
+    font-size: 13px;
+    background-color: #e45028;
+    width: 98px;
+    height: 37px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 38px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.header__batton:hover {
+    background-color: #c1401e;
+}
