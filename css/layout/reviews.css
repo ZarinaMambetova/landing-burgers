@@ -16,8 +16,9 @@
   }
 
   .reviews__text {
-  padding: 50px 20px;
+    padding: 25px 20px 0 20px;
 opacity: 0;
+height: 100%;
   }
 
   .reviews__text:hover {
@@ -25,6 +26,7 @@ opacity: 0;
     background-color: rgba(0,0,0,0.5);
     -webkit-transition: .5s;
        transition: .5s;
+       
   }
  
   .reviews__name {
