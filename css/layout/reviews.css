@@ -12,11 +12,19 @@
     flex:1 0 25%;
     height:50%;
     background-size:cover;
+    filter: grayscale(100%);
   }
 
   .reviews__text {
   padding: 50px 20px;
+opacity: 0;
+  }
 
+  .reviews__text:hover {
+    opacity: 1;
+    background-color: rgba(0,0,0,0.5);
+    -webkit-transition: .5s;
+       transition: .5s;
   }
  
   .reviews__name {
@@ -26,7 +34,7 @@
       margin-bottom: 10px;
   }
 
-  .reviews__comment {
+   .reviews__comment {
     font-size: 15px;
         color: #ffffff;
         font-family: 'ubuntulight';
@@ -48,6 +56,6 @@
 }
 
 .reviews__button:hover {
-    background-color: #282828;
+    background-color: #1f2122;
 }
-  
+
