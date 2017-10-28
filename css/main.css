@@ -1,0 +1,51 @@
+
+@import "layout/fonts.css" ;
+@import "layout/header.css" ;
+@import "layout/first-screen.css" ;
+@import "layout/nav_circle.css" ;
+@import "layout/we.css" ;
+@import "layout/reviews.css" ;
+
+
+body, html {
+    height: 100%;
+    
+  }
+
+  p, h1 {
+    margin: 0;
+  }
+
+  .wrapper {
+    max-width: 1680px;
+    min-width: 320px;
+    margin: 0 auto;
+  }
+
+.container {
+  width: 940px ;
+  margin: 0 auto ;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+
+}
+
+.section__title {
+  font-family: "gagalinregular";
+  font-size: 72px;
+  font-weight: normal;
+
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+
+.reviews__container {
+  width: 100% ;
+}
