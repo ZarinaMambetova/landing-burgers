@@ -4,6 +4,8 @@
 @import "layout/first-screen.css" ;
 @import "layout/nav_circle.css" ;
 @import "layout/we.css" ;
+@import "layout/reviews.css" ;
+
 
 body, html {
     height: 100%;
@@ -42,4 +44,8 @@ ul {
     margin: 0;
     list-style: none;
     
+}
+
+.reviews__container {
+  width: 100% ;
 }

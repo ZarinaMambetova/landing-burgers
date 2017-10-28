@@ -1,0 +1,53 @@
+
+
+.reviews-list{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    height:100vh;
+    flex-wrap:wrap;
+  }
+  .reviews__item{
+    flex:1 0 25%;
+    height:50%;
+    background-size:cover;
+  }
+
+  .reviews__text {
+  padding: 50px 20px;
+
+  }
+ 
+  .reviews__name {
+      color: #ffffff;
+      font-family: 'gagalinregular';
+      font-size: 14px;
+      margin-bottom: 10px;
+  }
+
+  .reviews__comment {
+    font-size: 15px;
+        color: #ffffff;
+        font-family: 'ubuntulight';
+        margin-bottom: 15px;
+        line-height: 1.7;
+  }
+
+  .reviews__button {
+    color: #ffffff;
+    font-family: 'ubuntumedium';
+    font-size: 13px;
+    background-color: #2f3234;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+    padding: 7px 13px;
+}
+
+.reviews__button:hover {
+    background-color: #282828;
+}
+  
