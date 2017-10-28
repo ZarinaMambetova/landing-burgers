@@ -10,6 +10,10 @@ body, html {
     
   }
 
+  p, h1 {
+    margin: 0;
+  }
+
   .wrapper {
     max-width: 1680px;
     min-width: 320px;
@@ -26,9 +30,10 @@ body, html {
 
 }
 
-.main__text {
+.section__title {
   font-family: "gagalinregular";
   font-size: 72px;
+  font-weight: normal;
 
 }
 

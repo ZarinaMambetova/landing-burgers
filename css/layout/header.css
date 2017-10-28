@@ -8,14 +8,13 @@
 
 .header__navigation {
 display: flex;
+align-items:  center;
 }
 
 .navigation-list {
-    align-items: center;
-    justify-content: center;
     margin-right: 20px;
-    
-}
+    display: flex;
+    }
 
 .navigation__link {
     text-decoration: none;
@@ -28,10 +27,7 @@ display: flex;
 }
 
 .navigation__item{
-display: inline-flex;
-align-items: center;
-padding-right: 8px;
-padding-left: 2px;
+margin-left: 30px;
 }
 
 
@@ -49,26 +45,23 @@ padding-left: 2px;
     left: -15px;
     transform: translateY(-50%);
 }
-
-.navigation__link:first-child::before {
-    content: none;
+.navigation__item:first-child .navigation__link:before {
+    display: none;
 }
 
-.header__batton {
+.header__button {
     color: #ffffff;
     font-family: "ubuntumedium";
     font-size: 13px;
     background-color: #e45028;
-    width: 98px;
-    height: 37px;
     border-radius: 3px;
     text-transform: uppercase;
     text-align: center;
-    line-height: 38px;
     text-decoration: none;
     transition: .5s;
+    padding: 10px 20px;
 }
 
-.header__batton:hover {
+.header__button:hover {
     background-color: #c1401e;
 }
