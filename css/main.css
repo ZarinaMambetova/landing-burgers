@@ -7,18 +7,11 @@
 @import "layout/reviews.css" ;
 
 
-body, html {
-    height: 100%;
-    
-  }
-
-  p, h1 {
+ p, h1 {
     margin: 0;
   }
 
   .wrapper {
-    max-width: 1680px;
-    min-width: 320px;
     margin: 0 auto;
   }
 
@@ -46,6 +39,3 @@ ul {
     
 }
 
-.reviews__container {
-  width: 100% ;
-}
