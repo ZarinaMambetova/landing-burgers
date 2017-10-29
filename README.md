@@ -3,7 +3,7 @@
 
 https://zarinamambetova.github.io/landing-burgers/
 
-[![N|Solid](images/maket/burgers.psd)](https://zarinamambetova.github.io/landing-burgers/)
+[![N|Solid](images/maket/burgers.jpg)](https://zarinamambetova.github.io/landing-burgers/)
 
 В проекте использованы: 
 - Технология One Page Scroll
