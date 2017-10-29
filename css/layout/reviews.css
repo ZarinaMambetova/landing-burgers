@@ -1,12 +1,14 @@
 
 .section_reviews {
     height:100vh;
+    min-height: 650px;
 }
 .reviews-list{
     list-style-type:none;
     margin:0;
     padding:0;
     display:flex;
+    height: 100%;
     
     flex-wrap:wrap;
   }

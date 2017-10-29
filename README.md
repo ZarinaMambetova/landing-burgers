@@ -1,3 +1,4 @@
 # Лендинг "Бургерная"
 
-[![N|Solid](https://loftschool.com/img/artboard.png)](https://loftschool.com/)
+[![N|Solid](images/maket/burgers.psd)](https://zarinamambetova.github.io/landing-burgers/)
+
