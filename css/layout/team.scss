@@ -1,0 +1,25 @@
+.section_team {
+    background: url(./../images/bg/SBS_1255-X2.png);
+    height: 100vh;
+    min-height: 650px;
+    background-size: cover;
+    position: relative;
+}
+
+.team__name {
+    color: #ffffff;
+    font-family: 'gagalinregular';
+    font-size: 14px;
+}
+
+.team__posicion {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'ubuntubold';
+}
+
+.team__text {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'ubuntulight';
+}
