@@ -1,43 +1,42 @@
+@import "layout/fonts";
+@import "layout/header";
+@import "layout/first-screen";
+@import "layout/nav_circle";
+@import "layout/we";
+@import "layout/reviews";
+@import "layout/burgers";
+@import "layout/team";
+@import "layout/menu";
+@import "layout/contacts";
+@import "layout/order";
 
-@import "layout/fonts" ;
-@import "layout/header" ;
-@import "layout/first-screen" ;
-@import "layout/nav_circle" ;
-@import "layout/we" ;
-@import "layout/reviews" ;
-@import "layout/burgers" ;
-@import "layout/team" ;
-@import "layout/menu" ;
-
- p, h1 {
+p,
+h1,
+h2 {
     margin: 0;
-  }
+}
 
-  .wrapper {
+.wrapper {
     margin: 0 auto;
-  }
+}
 
 .container {
-  width: 940px ;
-  margin: 0 auto ;
-  display: flex;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
 }
 
 .section__title {
-  font-family: "gagalinregular";
-  font-size: 72px;
-  font-weight: normal;
-
+    font-family: "gagalinregular";
+    font-size: 72px;
+    font-weight: normal;
 }
 
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    
 }
-

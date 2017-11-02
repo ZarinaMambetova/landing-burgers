@@ -6,20 +6,64 @@
         position: relative;
     }
 
-        .menu__name {
-        color: #ffffff;
-        font-family: 'gagalinregular';
-        font-size: 14px;
+    .menu-accord {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
     }
 
-    .menu__text {
+    .menu-accord__title {
+        color: #ffffff;
+        font-family: 'gagalinregular';
+        font-size: 40px;
+        display: inline-block;
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%) translateX(-35%) rotate(-90deg);
+        white-space: nowrap;
+      }
+
+    .menu-accord__text {
         font-size: 14px;
         color: #ffffff;
         font-family: 'ubuntulight';
+        padding: 60px 34px;
+        line-height: 2;
     }
 
+    .menu-accord__description {
+        width: 0;
+        overflow: hidden;
+        background-color: #2f3234;
+        opacity: 0.93;
+    }
 
-    .menu__name_meat {
-        background: url(images/bg/for-meat.png);
+    .menu-accord__item,
+    .menu-accord__link {
+        height: 100%;
+        display: block;
+        position: relative;
+    }
+
+    .menu-accord__link {
+        width: 80px;
         background-size: cover;
+    }
+
+    .menu-accord__item-type-active .menu-accord__description {
+        width: 540px;
+    }
+
+    .menu-accord__item {
+        display: flex;
+    }
+
+    .menu__title {
+        color: #ffffff;
+        margin-top: 115px;
     }
