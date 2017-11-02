@@ -31,7 +31,7 @@
                 <li class="navigation__item">
                     <a href="#" class="navigation__link">КОНТАКТЫ</a></li>
         </ul>
-            <a href="#" class="header__button">ЗАКАЗАТЬ</a>
+            <a href="#" class="button">ЗАКАЗАТЬ</a>
                         </nav>
                     </div>
                 </header>
@@ -286,45 +286,74 @@
                 <div class="form__content">
                     <div class="form__row">
                         <label class="form__block">
-                            <div class="form__block-title">Имя</div>
+                            <div class="form__block_title">Имя</div>
                             <input type="text" class="form__input">
                         </label>
                         <label class="form__block">
-                            <div class="form__block-title">Имя</div>
+                            <div class="form__block_title">Телефон</div>
                             <input type="text" class="form__input">
                         </label>
                     </div>
                     <div class="form__row">
                         <label class="form__block">
-                            <div class="form__block-title">Улица</div>
+                            <div class="form__block_title">Улица</div>
                             <input type="text" class="form__input">
                         </label>
                     </div>
                     <div class="form__row">
                         <label class="form__block">
-                            <div class="form__block-title">Дом1</div>
+                            <div class="form__block_title">Дом</div>
                             <input type="text" class="form__input">
                         </label>
                         <label class="form__block">
-                            <div class="form__block-title">дом2</div>
+                            <div class="form__block_title">Корпус</div>
                             <input type="text" class="form__input">
                         </label>
                         <label class="form__block">
-                            <div class="form__block-title">дом 3</div>
+                            <div class="form__block_title">Квартира</div>
                             <input type="text" class="form__input">
                         </label>
                         <label class="form__block">
-                            <div class="form__block-title">дом 4</div>
+                            <div class="form__block_title">Этаж</div>
                             <input type="text" class="form__input">
                         </label>
+                    </div>
+                </div>
+                <div class="form__content">
+                    <div class="form__row">
+                    <div class="form__row form__row_textarea">
+                    <label for="comment" class="form__block">
+                        <div class="form__block_title">Комментарий</div></label>
+                    <textarea  name="form-comment" id="comment"  class="form__input form__input_textarea">
+                    </textarea>
+                </div>
+            </div>
+                    <div class="form__row">
+         <div class="form__row form__row_radio">
+            <input type="radio" name="review" value="сash" id="сash">
+            <label for="сash" class="form__block form__block_title form__block_title_radio">Потребуется сдача</label>
+        </div>
+        <div class="form__row form__row_radio">
+            <input type="radio" name="review" value="kard" id="kard" checked>
+            <label for="kard" class="form__block form__block_title form__block_title_radio">Оплата по карте</label>
+        </div></div>
+        <div class="form__row">
+                <input type="checkbox" value="call_no" id="call_no" name="call" class="form__checkbox">
+            <label for="call_no" class="form__block_title form__block_title_checkbox">Не перезванивать</label>
+        </div>
+                    
+                    <div class="form__row">
+                        <a href="#" class="button">ЗАКАЗАТЬ</a>
+                        <a href="#" class="button_clear">Очистить</a>
+                    </div></div>
+</div>
+
                     </div>
                 </div>
             </form>
         </div>
     </div>
 </section>
-
-
 
 
                         <section class="section_contacts">
@@ -339,6 +368,9 @@
     <ul class="social__list">
         <li class="social__item">
             <a href="https://vk.com" class="socials__link social__link_icon social__link_icon_vk" target="_blank">
+                    <svg class="icon">
+                        
+                    </svg>
             </a>
         </li>
     </ul>
