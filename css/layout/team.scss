@@ -1,0 +1,91 @@
+                .section_team {
+                    background: url(./../images/bg/SBS_1255-X2.png);
+                    height: 100vh;
+                    min-height: 650px;
+                    background-size: cover;
+                    position: relative;
+                }
+
+                .team__content {
+                    position: absolute;
+                    right: 0;
+                    background-color: #1f2122;
+                    opacity: 0.93;
+                    width: 35%;
+                    height: 100%;
+                    padding-left: 80px;
+                }
+
+                .team-accord {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    position: absolute;
+                    flex-direction: column;
+                    width: 340px;
+                    padding-left: 26px;
+                }
+
+                .team-accord__name {
+                    color: #ffffff;
+                    font-family: 'gagalinregular';
+                    font-size: 14px;
+                    position: relative;
+                }
+
+                .team-accord__posicion {
+                    font-size: 14px;
+                    color: #ffffff;
+                    font-family: 'ubuntubold';
+                    margin-bottom: 15px;
+                }
+
+                .team-accord__text {
+                    font-size: 14px;
+                    color: #ffffff;
+                    font-family: 'ubuntulight';
+                    line-height: 2;
+                }
+
+                .team__title {
+                    color: #f9b43b;
+                    padding-bottom: 90px;
+                    margin-top: 90px;
+                }
+
+                .team-accord__item,
+                .team-accord__link {
+                    text-decoration: none;
+                    position: relative;
+                }
+
+                .team-accord__description {
+                    display: flex;
+                    overflow: hidden;
+                    height: 0;
+                    margin-top: 15px;
+                }
+
+                .team-accord__photo {
+                    width: 100%;
+                }
+
+                .team-accord__image {
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                }
+
+                .team-accord__item-type-active .team-accord__description {
+                    height: 130px;
+                }
+
+                .team-accord__name:before {
+                    content: "";
+                    position: absolute;
+                    border: 5px solid transparent;
+                    border-top: 7px solid #f9b43b;
+                    left: -25px;
+                    bottom: -1px;
+                }

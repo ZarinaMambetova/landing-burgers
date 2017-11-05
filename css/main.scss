@@ -1,0 +1,47 @@
+@import "layout/fonts";
+@import "layout/header";
+@import "layout/first-screen";
+@import "layout/nav_circle";
+@import "layout/we";
+@import "layout/reviews";
+@import "layout/burgers";
+@import "layout/team";
+@import "layout/menu";
+@import "layout/contacts";
+@import "layout/order";
+@import "layout/sprite";
+@import "layout/media";
+p,
+h1,
+h2 {
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.container {
+    width: rem(940);
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    
+    @include tablet {
+        width: rem(720);
+    }
+}
+
+.section__title {
+    font-family: "gagalinregular";
+    font-size: 72px;
+    font-weight: normal;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

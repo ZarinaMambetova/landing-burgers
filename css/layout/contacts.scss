@@ -1,0 +1,52 @@
+    .section_contacts {
+        background: url(./../images/bg/Layer-4.png);
+        height: 100vh;
+        min-height: 650px;
+        background-size: cover;
+        position: relative;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-top: auto;
+        background-color: #1f2122;
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+    }
+
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .adress {
+        font-family: 'ubuntulight';
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+    .footer__col {
+        width: 50%;
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .contacts__phone {
+        color: #e45028;
+        font-family: 'ubuntubold';
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .footer__col_social {
+        color: #ffffff;
+        justify-content: flex-end;
+        display: flex;
+    }
