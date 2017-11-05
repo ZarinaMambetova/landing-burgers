@@ -9,9 +9,8 @@
 @import "layout/menu";
 @import "layout/contacts";
 @import "layout/order";
-@import "layout/common";
 @import "layout/sprite";
-
+@import "layout/media";
 p,
 h1,
 h2 {
@@ -23,12 +22,16 @@ h2 {
 }
 
 .container {
-    width: 940px;
+    width: rem(940);
     margin: 0 auto;
     display: flex;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
+    
+    @include tablet {
+        width: rem(720);
+    }
 }
 
 .section__title {
