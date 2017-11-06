@@ -163,17 +163,17 @@
   border-radius: 0.14286rem;
   margin-bottom: 0.14286rem; }
 
-.section__info {
+.section_info {
   background: url(./../images/bg/texture.png) 50% 50% no-repeat;
   height: 100vh;
   min-height: 46.42857rem;
   background-size: cover;
   position: relative; }
   @media (min-width: 480px) and (max-width: 767px) {
-    .section__info {
+    .section_info {
       min-width: 51.42857rem; } }
   @media (min-width: 320px) and (max-width: 479px) {
-    .section__info {
+    .section_info {
       min-width: 32.85714rem; } }
 
 @media (min-width: 320px) and (max-width: 479px) {
