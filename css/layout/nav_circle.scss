@@ -1,0 +1,49 @@
+    .circle {
+        position: fixed;
+        right: 50px;
+        top: 50px;
+        @include tablet {
+            display: none;
+        }
+        @include phone {
+            display: none;
+        }
+    }
+
+    .circle-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .circle__link {
+        width: 5px;
+        height: 5px;
+        background: #ffffff;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .circle__item {
+        position: relative;
+    }
+
+    .circle__item:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        left: -3px;
+        top: 6px;
+    }
+
+    .circle__item:hover:after {
+        border-color: #ffffff;
+    }
+
+    .circle__item-type-active:after {
+        border-color: #ffffff;
+    }
