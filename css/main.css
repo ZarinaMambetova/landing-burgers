@@ -539,7 +539,7 @@
   background-color: #1f2122; }
 
 .section_burgers {
-  background: url(./../images/bg/burgers-bg.png) 50% 50% no-repeat;
+  background-image: -webkit-linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
   height: 100vh;
   background-size: cover;
   min-height: 46.42857rem;
@@ -557,6 +557,12 @@
   @media (min-width: 320px) and (max-width: 479px) {
     .section_burgers {
       min-width: 32.85714rem; } }
+
+.burgers__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .section_team {
   background: url(./../images/bg/SBS_1255-X2.png) 50% 50% no-repeat;
@@ -1148,7 +1154,8 @@ input[type="radio"]:checked + .form__block_title_radio:after {
 
 p,
 h1,
-h2 {
+h2,
+h3 {
   margin: 0; }
 
 .html {
