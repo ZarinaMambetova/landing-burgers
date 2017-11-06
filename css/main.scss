@@ -1,47 +1,64 @@
-@import "layout/media";
-@import "layout/fonts";
-@import "layout/header";
-@import "layout/first-screen";
-@import "layout/nav_circle";
-@import "layout/we";
-@import "layout/reviews";
-@import "layout/burgers";
-@import "layout/team";
-@import "layout/menu";
-@import "layout/contacts";
-@import "layout/order";
-@import "layout/sprite";
-p,
-h1,
-h2 {
-    margin: 0;
-}
+                                    @import "./layout/media.scss";
+                                @import "./layout/fonts.scss";
+                                @import "./layout/header.scss";
+                                @import "./layout/first-screen.scss";
+                                @import "./layout/nav_circle.scss";
+                                @import "./layout/we.scss";
+                                @import "./layout/reviews.scss";
+                                @import "./layout/burgers.scss";
+                                @import "./layout/team.scss";
+                                @import "./layout/menu.scss";
+                                @import "./layout/contacts.scss";
+                                @import "./layout/order.scss";
+                                p,
+                                h1,
+                                h2 {
+                                    margin: 0;
+                                }
 
-.wrapper {
-    margin: 0 auto;
-}
+                                .html {
+                                    font-size: 16px;
+                                    @include tablet {
+                                        font-size: 15px;
+                                    }
+                                    @include phone {
+                                        font-size: 14px;
+                                    }
+                                }
 
-.container {
-    width: rem(940);
-    margin: 0 auto;
-    display: flex;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    
-    @include tablet {
-        width: rem(720);
-    }
-}
+                                .wrapper {
+                                    margin: 0 auto;
+                                }
 
-.section__title {
-    font-family: "gagalinregular";
-    font-size: 72px;
-    font-weight: normal;
-}
+                                .container {
+                                    width: 100%;
+                                    max-width: rem(940);
+                                    margin: 0 auto;
+                                    display: flex;
+                                    display: -webkit-box;
+                                    display: -webkit-flex;
+                                    display: -ms-flexbox;
+                                    @include tablet {
+                                        width: rem(720);
+                                    }
+                                    @include phone {
+                                        width: rem(460);
+                                    }
+                                }
 
-ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
+                                .section__title {
+                                    font-family: "gagalinregular";
+                                    font-size: rem(72);
+                                    font-weight: normal;
+                                    @include tablet {
+                                        font-size: rem(63);
+                                    }
+                                    @include phone {
+                                        font-size: rem(50);
+                                    }
+                                }
+                                    ul {
+                                        padding: 0;
+                                        margin: 0;
+                                        list-style: none;
+                                    }

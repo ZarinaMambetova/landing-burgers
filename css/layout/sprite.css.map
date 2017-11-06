@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,KAAM;EACJ,OAAO,EAAE,YAAY;EACrB,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,IAAI;EACjB,IAAI,EAAE,OAAO;EACb,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,WAAQ;IACN,IAAI,EAAE,OAAO;EAEf,iBAAc;IACZ,WAAW,EAAE,CAAC",
-"sources": ["sprite.scss"],
-"names": [],
-"file": "sprite.css"
-}

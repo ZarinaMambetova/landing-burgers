@@ -1,8 +1,14 @@
 .section_burgers {
-    background: url(./../images/bg/burgers-bg.png) ;
-     height: 100vh;
-     background-size: cover;
+    background: url(./../images/bg/burgers-bg.png) 50% 50% no-repeat;
+    height: 100vh;
+    background-size: cover;
     min-height: 650px;
     display: flex;
     align-items: center;
+    @include tablet {
+        min-width: rem(720);
+    }
+    @include phone {
+        min-width: rem(460);
+    }
 }

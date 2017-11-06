@@ -1,44 +1,64 @@
-.section_we {
-    background: url(./../images/bg/bg-we.png) ;
-     height: 100vh;
-     background-size: cover;
-    min-height: 650px;
-    display: flex;
-    align-items: center;
-}
-
-.we__container {
-    flex-direction: column;
-}
-
-.about-list {
-    display: flex;
-    align-items: baseline;
+        .section_we {
+        background: url(./../images/bg/bg-we.png) 50% 50% no-repeat;
+        height: 100vh;
+        background-size: cover;
+        min-height: 650px;
+        display: flex;
+        align-items: center;
+        @include tablet {
+            min-width: rem(720);
+        }
+        @include phone {
+            min-width: rem(460);
+        }
     }
 
-      .about__item {
+    .we__container {
+        flex-direction: column;
+    }
+
+    .about-list {
+        display: flex;
+        align-items: baseline;
+        @include phone {
+            flex-direction: column;
+        }
+    }
+
+    .about__item {
         text-align: center;
         flex: 3;
-        
+        @include phone {
+            display: flex;
+            flex-direction: row;
+            padding: 0 45px;
+        }
     }
 
     .section__title_we {
         text-align: center;
         padding-bottom: 80px;
-    }
-
-.about__name {
-    font-family: 'lifehackmedium';
-    color: #2f3234;
-    font-size: 24.1px;
-    
-
-}
-
-.about__text {
-    font-family: 'ubuntulight';
-    color: #848281;
-    font-size: 14.03px;
-    margin-top: 15px;
-    line-height: 2;
-}
+        @include phone {
+            padding-bottom: 35px;
+        }
+        }
+        .about__name {
+            font-family: 'lifehackmedium';
+            color: #2f3234;
+            font-size: 24.1px;
+        }
+        .about__text {
+            font-family: 'ubuntulight';
+            color: #848281;
+            font-size: 14.03px;
+            margin-top: 15px;
+            line-height: 2;
+        }
+        .about__info {
+            @include phone {
+                padding: 30px;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+            }
+        }

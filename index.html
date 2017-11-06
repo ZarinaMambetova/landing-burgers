@@ -10,7 +10,7 @@
 </head>
 <body>
         <div class="wrapper">
-            <section class="section__info">
+           <section class="section__info">
                 <header class="header">
                     <div class="container header__container">
                                              <a href="" class="header__logo">
@@ -32,16 +32,21 @@
                     <a href="#" class="navigation__link">КОНТАКТЫ</a></li>
         </ul>
             <a href="#" class="button">ЗАКАЗАТЬ</a>
+            <div type="button" class="nav-hamburger">
+                <span class="nav-hamburger__line"></span>
+                <span class="nav-hamburger__line"></span>
+                <span class="nav-hamburger__line"></span>
+            </div>
                         </nav>
                     </div>
                 </header>
                 <main class="main">
-                        <div class=container>
+                        <div class="container info__container">
                                    <div class="main__photo">
                         <img src="images/content/drops.png" alt="Burger" class="main__img">
                     </div>
                     <div class="main__text">
-                    <h1 class="section__title">
+                    <h1 class="section__title section__title_main">
                         <span class="section__title_info">Мы делаем</span>
                         <span class="section__title_subtitle">натуральные бургеры</span>
                     </h1>
@@ -53,8 +58,8 @@
             <img src="images/icon/arrow-scroll.svg" alt="scroll" class="scroll__img">
         </a>
 </div>
-     </section> 
-<!-- 
+     </section>  
+
 <section class="section_we">
         <div class="container we__container">
                 <h1 class="section__title section__title_we">
@@ -90,7 +95,7 @@
 </ul>
                          </div>
     </section>
-    <section class="section_burgers">
+ <section class="section_burgers">
         </section>
         <section class="section_team">
                 <div class="container team__container">
@@ -158,9 +163,10 @@
 </div>
 </div>
             </section>
+            
             <section class="section_menu">
                     <div class="container menu__container">
-                            <h2 class="section__title menu__title">МЕНЮ</h1>
+                            <h2 class="section__title menu__title">МЕНЮ</h2>
 <ul class="menu-accord">
     <li class="menu-accord__item menu-accord__item-type-active">
         <a href="#" class="menu-accord__link" style="background-image:url(images/bg/for-meat.png)">
@@ -207,7 +213,7 @@
                             
                     </div>
                 </section>
-                <section class="section_reviews">
+             <section class="section_reviews">
              <ul class="reviews-list">
             <li class="reviews__item" style="background-image:url(images/bg/photo-1.png)">
             <div class="reviews__text">
@@ -328,7 +334,7 @@
                     </textarea>
                 </div>
             </div>
-                    <div class="form__row">
+                    <div class="form__row ">
          <div class="form__row form__row_radio">
             <input type="radio" name="review" value="сash" id="сash">
             <label for="сash" class="form__block form__block_title form__block_title_radio">Потребуется сдача</label>
@@ -342,7 +348,7 @@
             <label for="call_no" class="form__block_title form__block_title_checkbox">Не перезванивать</label>
         </div>
                     
-                    <div class="form__row">
+                    <div class="form__row form__row__buttons">
                         <a href="#" class="button">ЗАКАЗАТЬ</a>
                         <a href="#" class="button_clear">Очистить</a>
                     </div></div>
@@ -363,22 +369,47 @@
         <div class="footer__col footer__col_address">
             <address class="contacts">
 <div class="adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div> 
-<a href="tel:88123771377" class="contacts__phone">+7 (812) 377-13-77</a></address></div>
+<a href="tel:88123771377" class="contacts__phone">
+    <svg id="phone" class="phone__link_icon">
+        <use xlink:href="images/icon/sprite.svg#phone"></use>
+    </svg>
+    +7 (812) 377-13-77</a></address></div>
 <div class="footer__col footer__col_social">
     <ul class="social__list">
         <li class="social__item">
             <a href="https://vk.com" class="socials__link social__link_icon social__link_icon_vk" target="_blank">
-                    <svg class="icon">
-                        
+                    <svg  id="vk" class="social__link_icon">
+                        <use xlink:href="images/icon/sprite.svg#vk"></use>
                     </svg>
-            </a>
+                     </a>
         </li>
+            <li class="social__item">
+                <a href="#" class="socials__link social__link_icon social__link_icon_vk" target="_blank">
+                    <svg id="fb" class="social__link_icon">
+                        <use xlink:href="images/icon/sprite.svg#fb"></use>
+                    </svg>
+                </a>
+            </li>
+                <li class="social__item">
+                    <a href="#" class="socials__link social__link_icon social__link_icon_vk" target="_blank">
+                        <svg id="inst" class="social__link_icon">
+                            <use xlink:href="images/icon/sprite.svg#inst"></use>
+                        </svg>
+                    </a>
+                </li>
+                    <li class="social__item">
+                        <a href="#" class="socials__link social__link_icon social__link_icon_vk" target="_blank">
+                            <svg id="twitter" class="social__link_icon">
+                                <use xlink:href="images/icon/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
     </ul>
 </div>
     </div>
     </footer>
     </div>
-                            </section> --> 
+                            </section>  
                             <nav class="circle">
                                     <ul class="circle-list">
                                     <li class="circle__item circle__item-type-active"><a href="#" class="circle__link"> </a></li>
