@@ -1,0 +1,226 @@
+                                                                                .section_order {
+                                                                                    background: url(./../images/bg/bg-texture.png) 50% 50% no-repeat;
+                                                                                    height: 100vh;
+                                                                                    min-height: rem(650);
+                                                                                    background-size: cover;
+                                                                                    position: relative;
+                                                                                    @include tablet {
+                                                                                        min-width: rem(720);
+                                                                                    }
+                                                                                    @include phone {
+                                                                                        min-width: rem(460);
+                                                                                    }
+                                                                                }
+
+                                                                                .form__elem {
+                                                                                    display: flex;
+                                                                                    @include tablet {
+                                                                                        flex-direction: column;
+                                                                                        margin: 0rem 9.5rem;
+                                                                                    }
+                                                                                    @include phone {
+                                                                                        flex-direction: column;
+                                                                                        margin-left: rem(18);
+                                                                                    }
+                                                                                }
+
+                                                                                .form__content {
+                                                                                    flex: 2;
+                                                                                    margin-right: rem(30);
+                                                                                    @include tablet {
+                                                                                        margin-right: 0;
+                                                                                    }
+                                                                                    @include phone {
+                                                                                        margin-right: rem(48);
+                                                                                    }
+                                                                                }
+
+                                                                                .order__container {
+                                                                                    flex-direction: column;
+                                                                                    justify-content: center;
+                                                                                }
+
+                                                                                .section__title_order {
+                                                                                    color: #f9b43b;
+                                                                                    text-align: center;
+                                                                                    margin-bottom: rem(80);
+                                                                                    margin-top: rem(90);
+                                                                                    @include tablet {
+                                                                                        margin-bottom: 2.71429rem;
+                                                                                        margin-top: 4.42857rem;
+                                                                                    }
+                                                                                    @include phone {
+                                                                                        padding: rem(0) rem(20);
+                                                                                        margin-bottom: rem(24);
+                                                                                        margin-top: 1.28571rem;
+                                                                                    }
+                                                                                }
+
+                                                                                .form__block_title {
+                                                                                    color: #ffffff;
+                                                                                    font-family: 'ubuntulight';
+                                                                                    font-size: rem(14);
+                                                                                    margin-bottom: rem(8);
+                                                                                    @include phone {
+                                                                                        margin-bottom: 0;
+                                                                                    }
+                                                                                }
+
+                                                                                .form__input {
+                                                                                    border: none;
+                                                                                    border-radius: rem(5);
+                                                                                    padding: rem(5);
+                                                                                    width: 100%;
+                                                                                    height: rem(35);
+                                                                                }
+
+                                                                                .form__row {
+                                                                                    display: flex;
+                                                                                    margin-bottom: rem(20);
+                                                                                    @include phone {
+                                                                                        margin-bottom: rem(15);
+                                                                                    }
+                                                                                }
+
+                                                                                .form__block {
+                                                                                    flex: 1;
+                                                                                    margin-right: rem(20);
+                                                                                    &:last-child {
+                                                                                        margin-right: 0;
+                                                                                    }
+                                                                                }
+
+                                                                                .form__input_textarea {
+                                                                                    height: rem(124);
+                                                                                    resize: none;
+                                                                                    width: rem(460);
+                                                                                    @include tablet {
+                                                                                        width: 32.71429rem;
+                                                                                    }
+                                                                                    @include phone {
+                                                                                        width: 27.85714rem;
+                                                                                    }
+                                                                                }
+
+                                                                                .form__row__buttons {
+                                                                                    @include phone {
+                                                                                        margin-left: rem(107);
+                                                                                    }
+                                                                                }
+
+                                                                                .form__row_textarea {
+                                                                                    flex-direction: column;
+                                                                                    margin-bottom: 0;
+                                                                                }
+
+                                                                                .form__row_radio {
+                                                                                    display: inline-block;
+                                                                                    margin-left: rem(-16);
+                                                                                    margin-right: rem(15);
+                                                                                    @include phone {
+                                                                                        margin-left: 2.21429rem;
+                                                                                    }
+                                                                                }
+
+                                                                                input[type="radio"] {
+                                                                                    opacity: 0;
+                                                                                    margin: 0;
+                                                                                }
+
+                                                                                .form__block_title_radio {
+                                                                                    position: relative;
+                                                                                }
+
+                                                                                .form__block_title_radio:before {
+                                                                                    content: '';
+                                                                                    width: rem(15);
+                                                                                    height: rem(15);
+                                                                                    border-radius: 50%;
+                                                                                    border: 1px solid #ffffff;
+                                                                                    display: inline-block;
+                                                                                    vertical-align: bottom;
+                                                                                    background-color: #ffffff;
+                                                                                    margin-right: rem(5);
+                                                                                }
+
+                                                                                .form__block_title_radio:after {
+                                                                                    content: '';
+                                                                                    width: rem(7);
+                                                                                    height: rem(7);
+                                                                                    border-radius: 50%;
+                                                                                    background-color: #e35028;
+                                                                                    display: inline-block;
+                                                                                    position: absolute;
+                                                                                    left: rem(5);
+                                                                                    top: 50%;
+                                                                                    transform: translateY(-50%);
+                                                                                    opacity: 0;
+                                                                                    transition: .5s;
+                                                                                }
+
+                                                                                input[type="radio"]:checked+.form__block_title_radio:before {
+                                                                                    border: rem(1) solid #ffffff;
+                                                                                    ;
+                                                                                }
+
+                                                                                input[type="radio"]:checked+.form__block_title_radio {
+                                                                                    color: #ffffff;
+                                                                                    ;
+                                                                                }
+
+                                                                                input[type="radio"]:checked+.form__block_title_radio:after {
+                                                                                    opacity: 1;
+                                                                                }
+
+                                                                                .form__checkbox {
+                                                                                    display: none;
+                                                                                }
+
+                                                                                .form__block_title_checkbox {
+                                                                                    margin-top: rem(-6);
+                                                                                    @include phone {
+                                                                                        margin-left: rem(167);
+                                                                                    }
+                                                                                }
+
+                                                                                .form__checkbox+.form__block_title {
+                                                                                    position: relative;
+                                                                                }
+
+                                                                                .form__checkbox+.form__block_title:hover {
+                                                                                    cursor: pointer;
+                                                                                }
+
+                                                                                .form__checkbox+.form__block_title:before {
+                                                                                    content: '';
+                                                                                    display: inline-block;
+                                                                                    width: rem(15);
+                                                                                    height: rem(15);
+                                                                                    background-color: #ffffff;
+                                                                                    margin-right: rem(10);
+                                                                                }
+
+                                                                                .form__checkbox+.form__block_title:after {
+                                                                                    content: '✔';
+                                                                                    display: inline-block;
+                                                                                    color: #e35028;
+                                                                                    position: absolute;
+                                                                                    left: rem(2);
+                                                                                    opacity: 0;
+                                                                                    -webkit-transition: all 0.2s linear;
+                                                                                    transition: all 0.2s linear;
+                                                                                }
+
+                                                                                .form__checkbox:checked+.form__block_title:after {
+                                                                                    opacity: 1;
+                                                                                }
+
+                                                                                .button_clear {
+                                                                                    color: #ffffff;
+                                                                                    font-family: "ubuntumedium";
+                                                                                    font-size: rem(13);
+                                                                                    text-align: center;
+                                                                                    text-decoration: none;
+                                                                                    transition: .5s;
+                                                                                    padding: rem(10) rem(20);
+                                                                                }

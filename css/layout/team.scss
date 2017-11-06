@@ -1,0 +1,133 @@
+                                        .section_team {
+                                            background: url(./../images/bg/SBS_1255-X2.png) 50% 50% no-repeat;
+                                            height: 100vh;
+                                            min-height: rem(650);
+                                            background-size: cover;
+                                            position: relative;
+                                            @include tablet {
+                                                min-width: rem(720);
+                                            }
+                                            @include phone {
+                                                min-width: rem(460);
+                                            }
+                                        }
+
+                                        .team__content {
+                                            position: absolute;
+                                            right: 0;
+                                            background-color: #1f2122;
+                                            opacity: 0.93;
+                                            width: 35%;
+                                            height: 100%;
+                                            padding-left: rem(80);
+                                            @include tablet {
+                                                width: 100%;
+                                                text-align: center;
+                                            }
+                                            @include phone {
+                                                width: 100%;
+                                                text-align: center;
+                                                padding: 0;
+                                            }
+                                        }
+
+                                        .team-accord {
+                                            list-style-type: none;
+                                            margin: 0;
+                                            padding: 0;
+                                            display: flex;
+                                            position: absolute;
+                                            flex-direction: column;
+                                            width: rem(340);
+                                            padding-left: rem(26);
+                                            @include tablet {
+                                                padding-left: rem(237);
+                                            }
+                                            @include phone {
+                                                padding: 0;
+                                                width: 100%;
+                                            }
+                                        }
+
+                                        .team-accord__name {
+                                            color: #ffffff;
+                                            font-family: 'gagalinregular';
+                                            font-size: rem(14);
+                                            position: relative;
+                                        }
+
+                                        .team-accord__posicion {
+                                            font-size: rem(14);
+                                            color: #ffffff;
+                                            font-family: 'ubuntubold';
+                                            margin-bottom: rem(15);
+                                        }
+
+                                        .team-accord__text {
+                                            font-size: rem(14);
+                                            color: #ffffff;
+                                            font-family: 'ubuntulight';
+                                            line-height: 2;
+                                        }
+
+                                        .team__title {
+                                            color: #f9b43b;
+                                            padding-bottom: rem(90);
+                                            margin-top: rem(90);
+                                        }
+
+                                        .team-accord__item,
+                                        .team-accord__link {
+                                            text-decoration: none;
+                                            position: relative;
+                                            @include tablet {
+                                                text-align: center;
+                                            }
+                                            @include phone {
+                                                text-align: center;
+                                            }
+                                            margin-bottom: rem(20px);
+                                        }
+
+                                        .team-accord__description {
+                                            display: flex;
+                                            overflow: hidden;
+                                            height: 0;
+                                            margin-top: rem(15);
+                                            @include tablet {
+                                                flex-direction: column;
+                                            }
+                                            @include phone {
+                                                flex-direction: column;
+                                                padding: rem(0) rem(93);
+                                            }
+                                        }
+
+                                        .team-accord__photo {
+                                            width: 100%;
+                                        }
+
+                                        .team-accord__image {
+                                            border-radius: 50%;
+                                            width: rem(100);
+                                            height: rem(100);
+                                        }
+
+                                        .team-accord__item-type-active .team-accord__description {
+                                            height: 100%;
+                                        }
+
+                                        .team-accord__name:before {
+                                            content: "";
+                                            position: absolute;
+                                            border: rem(5) solid transparent;
+                                            border-top: rem(7) solid #f9b43b;
+                                            left: rem(-25);
+                                            bottom: rem(-1);
+                                        }
+
+                                        .team-accord__info {
+                                            @include tablet {
+                                                margin: rem(15) rem(0);
+                                            }
+                                        }
