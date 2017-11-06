@@ -1,92 +1,101 @@
                 .section_contacts {
-                background: url(./../images/bg/Layer-4.png) 50% 50% no-repeat;
-                height: 100vh;
-                min-height: 650px;
-                background-size: cover;
-                position: relative;
-                @include tablet {
-                    min-width: rem(720);
+                    background: url(./../images/bg/Layer-4.png) 50% 50% no-repeat;
+                    height: 100vh;
+                    min-height: rem(650);
+                    background-size: cover;
+                    position: relative;
+                    @include tablet {
+                        min-width: rem(720);
+                    }
+                    @include phone {
+                        min-width: rem(460);
+                    }
                 }
-                @include phone {
-                    min-width: rem(460);
-                }
-            }
 
-            .footer {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin-top: auto;
-                background-color: #1f2122;
-                display: flex;
-                height: 60px;
-                justify-content: space-between;
-                @include phone {
-                    height: 115px;
-                    flex-direction: column;
+                .footer {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin-top: auto;
+                    background-color: #1f2122;
+                    display: flex;
+                    height: rem(60);
+                    justify-content: space-between;
+                    @include phone {
+                        height: rem(115);
+                        flex-direction: column;
+                    }
                 }
-            }
 
-            .footer__container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                @include tablet {
-                    padding: 0 15px;
+                .footer__container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    @include tablet {
+                        padding: rem(0) rem(15);
+                    }
+                    @include phone {
+                        flex-direction: column;
+                    }
                 }
-                @include phone {
-                    flex-direction: column;
-                }
-            }
 
-            .adress {
-                font-family: 'ubuntulight';
-                color: #ffffff;
-                font-size: 14px;
-                @include phone {
-                    margin-bottom: 6px;
+                .adress {
+                    font-family: 'ubuntulight';
+                    color: #ffffff;
+                    font-size: rem(14);
+                    @include phone {
+                        margin-bottom: rem(6);
+                    }
                 }
-                }
+
                 .footer__col {
                     width: 50%;
                     @include phone {
-                        margin-top: 15px;
+                        margin-top: rem(15);
                         text-align: center;
                         width: initial;
                     }
                 }
+
                 .contacts {
                     flex-direction: column;
                 }
+
                 .contacts__phone {
                     color: #e45028;
                     font-family: 'ubuntubold';
-                    font-size: 14px;
+                    font-size: rem(14);
                     text-decoration: none;
-                    margin-top: 5px;
+                    margin-top: rem(5);
                 }
+
                 .footer__col_social {
                     color: #ffffff;
                     justify-content: flex-end;
                     display: flex;
                 }
+
                 .social__link_icon {
                     fill: #585858;
-                    height: 20px;
-                    width: 20px;
+                    height: rem(20);
+                    width: rem(20);
                 }
+
                 .social__link_icon:hover {
                     fill: #ffffff;
                 }
+
                 .social__list {
                     display: flex;
                 }
+
                 .social__item {
-                    margin: 5px;
+                    margin: rem(5);
                 }
+
                 .phone__link_icon {
                     fill: #e35028;
-                    height: 12px;
-                    width: 13px;
+                    height: rem(12);
+                    width: rem(13);
                 }
