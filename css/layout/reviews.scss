@@ -1,10 +1,7 @@
                 .section_reviews {
                 background-color: grey;
                 height: 100vh;
-                min-height: rem(650);
-                @include tablet {
-                    min-width: rem(720);
-                }
+                min-height: 650px;
                 @include phone {
                     min-width: rem(460);
                 }

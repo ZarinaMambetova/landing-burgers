@@ -32,12 +32,12 @@
         content: '';
         display: inline-block;
         position: absolute;
-        width: rem(10);
-        height: rem(10);
-        border: 1px solid transparent;
+        width: 0.9rem;
+        height: 0.9rem;
+        border: rem(1) solid transparent;
         border-radius: 50%;
-        left: rem(-3);
-        top: rem(6);
+        left: -0.35rem;
+        top: 0.16rem;
     }
 
     .circle__item:hover:after {

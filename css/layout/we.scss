@@ -2,12 +2,10 @@
             background: url(./../images/bg/bg-we.png) 50% 50% no-repeat;
             height: 100vh;
             background-size: cover;
-            min-height: rem(650);
+            min-height: 650px;
             display: flex;
             align-items: center;
-            @include tablet {
-                min-width: rem(720);
-            }
+            
             @include phone {
                 min-width: rem(460);
             }
@@ -28,6 +26,7 @@
         .about__item {
             text-align: center;
             flex: 3;
+            padding-left: rem(10);
             @include phone {
                 display: flex;
                 flex-direction: row;
@@ -54,7 +53,7 @@
             color: #848281;
             font-size: rem(14.03);
             margin-top: rem(15);
-            line-height: 2;
+            line-height: 1.9;
         }
 
         .about__info {

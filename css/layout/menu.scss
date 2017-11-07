@@ -1,12 +1,10 @@
                 .section_menu {
                     background: url(./../images/bg/deaf2.png) 50% 50% no-repeat;
                     height: 100vh;
-                    min-height: rem(650);
+                    min-height: 650px;
                     background-size: cover;
                     position: relative;
-                    @include tablet {
-                        min-width: rem(720);
-                    }
+  
                     @include phone {
                         min-width: rem(460);
                     }
@@ -67,7 +65,7 @@
                 .menu-accord__item-type-active .menu-accord__description {
                     width: 540px;
                     @include tablet {
-                        width: 34.64286rem;
+                        width: 85%;
                     }
                     @include phone {
                         width: 26.64286rem;

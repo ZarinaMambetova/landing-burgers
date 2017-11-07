@@ -5,9 +5,6 @@
         .header__logo {
             width: rem(92);
             height: rem(69);
-            @include tablet {
-                margin-left: rem(90);
-            }
         }
 
         .logo_image {
@@ -23,7 +20,7 @@
             display: flex;
             align-items: center;
             @include tablet {
-                margin-right: rem(39);
+                margin-right: 0.78571rem;
             }
         }
 

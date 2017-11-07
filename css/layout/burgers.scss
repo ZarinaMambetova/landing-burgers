@@ -2,14 +2,12 @@
     background-image: -webkit-linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
     height: 100vh;
     background-size: cover;
-    min-height: rem(650);
+    min-height: 650px;
     display: flex;
     align-items: center;
-    @include tablet {
-        min-width: rem(720);
-    }
     @include phone {
         min-width: rem(460);
+        display: none;
     }
 }
 

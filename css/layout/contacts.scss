@@ -4,9 +4,7 @@
                     min-height: rem(650);
                     background-size: cover;
                     position: relative;
-                    @include tablet {
-                        min-width: rem(720);
-                    }
+ 
                     @include phone {
                         min-width: rem(460);
                     }
