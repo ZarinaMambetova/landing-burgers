@@ -5,7 +5,6 @@
             min-height: 650px;
             display: flex;
             align-items: center;
-            
             @include phone {
                 min-width: rem(460);
             }
@@ -64,3 +63,4 @@
                 flex-direction: column;
             }
         }
+
