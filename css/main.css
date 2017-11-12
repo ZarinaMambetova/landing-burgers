@@ -176,6 +176,16 @@
   -ms-transform: rotate(-45deg) translateY(-12px);
   transform: rotate(-45deg) translateY(-12px); }
 
+.navigation-list_active {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999; }
+
 .section_info {
   background: url(./../images/bg/texture.png) 50% 50% no-repeat;
   height: 100vh;
