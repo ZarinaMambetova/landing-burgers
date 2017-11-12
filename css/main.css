@@ -40,7 +40,8 @@
 
 .header__logo {
   width: 6.57143rem;
-  height: 4.92857rem; }
+  height: 4.92857rem;
+  z-index: 1100; }
 
 .logo_image {
   width: 100%;
@@ -149,8 +150,7 @@
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex;
-      margin-right: 1.286rem; } }
+      display: flex; } }
 
 .hamburger__line {
   width: 1.07143rem;
@@ -162,6 +162,9 @@
   -webkit-transition: all .5s linear;
   -o-transition: all .5s linear;
   transition: all .5s linear; }
+
+.hamburger_active {
+  z-index: 999; }
 
 .hamburger_active .hamburger__line:nth-child(2n+0) {
   opacity: 0; }
@@ -177,14 +180,46 @@
   transform: rotate(-45deg) translateY(-12px); }
 
 .navigation-list_active {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 999; }
+  background-color: rgba(47, 50, 52, 0.99);
+  z-index: 999;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.navigation-list_active .navigation__link {
+  font-size: 24px;
+  font-family: 'ubunturegular'; }
+
+.navigation-list_active .navigation__item {
+  margin-left: 0;
+  margin-bottom: 60px; }
+
+.navigation-list_active .navigation__link:before {
+  width: 0.5rem;
+  height: 0.5rem;
+  right: 50%;
+  bottom: 164%;
+  top: initial;
+  left: initial; }
 
 .section_info {
   background: url(./../images/bg/texture.png) 50% 50% no-repeat;
@@ -242,7 +277,7 @@
   position: absolute; }
 
 .arrow-scroll_info {
-  left: 50%;
+  left: 45%;
   bottom: 3.57143rem;
   -webkit-transform: translateX(50%);
   -ms-transform: translateX(50%);
@@ -606,6 +641,13 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .burgers__item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   @media (min-width: 320px) and (max-width: 479px) {
     .burgers__item {
       -webkit-box-orient: vertical;
@@ -621,12 +663,17 @@
   -ms-flex: 1 0 50%;
   flex: 1 0 50%; }
 
+@media (min-width: 480px) and (max-width: 767px) {
+  .burgers__col_info {
+    text-align: center;
+    padding: 0rem 2.5rem; } }
+
 @media (min-width: 320px) and (max-width: 479px) {
   .burgers__col_info {
     text-align: center;
     padding: 0rem 2.5rem; } }
 
-.composition_button {
+.composition__link {
   border-radius: 0.28571rem;
   padding: 1.07143rem 1.57143rem;
   text-align: center;
@@ -635,10 +682,10 @@
   transition: .5s;
   cursor: pointer;
   background-color: #f08c33; }
-  .composition_button:hover {
+  .composition__link:hover {
     background-color: #e35028; }
 
-.composition_button:hover + .composition__list {
+.composition__link:hover + .composition__list {
   visibility: visible; }
 
 .content__link_icon {
@@ -646,12 +693,27 @@
   height: 100%;
   fill: #ffffff; }
 
+@media (min-width: 480px) and (max-width: 767px) {
+  .burgers__col_photo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
 @media (min-width: 320px) and (max-width: 479px) {
   .burgers__col_photo {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 .section__title_burger_info {
   font-family: 'gagalinregular';
@@ -669,14 +731,25 @@
 .burgers {
   width: 100%;
   margin-top: 5.14286rem; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .burgers {
+      width: 80%;
+      margin-top: 0; } }
   @media (min-width: 320px) and (max-width: 479px) {
     .burgers {
-      width: 80%; } }
+      width: 80%;
+      margin-top: 0; } }
 
 .calories {
   position: absolute;
   text-align: center;
   opacity: 0.5; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .calories {
+      right: 1%; } }
+  @media (min-width: 320px) and (max-width: 479px) {
+    .calories {
+      right: 1%; } }
 
 .calories__icon {
   width: 3.21429rem;
@@ -692,6 +765,10 @@
   line-height: 1.5rem;
   margin-bottom: 2.85714rem;
   margin-top: 3.57143rem; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .burgers__about {
+      margin-bottom: 0.85714rem;
+      margin-top: 0.57143rem; } }
   @media (min-width: 320px) and (max-width: 479px) {
     .burgers__about {
       margin-bottom: 0.85714rem;
@@ -719,6 +796,18 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .price__info {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  @media (min-width: 320px) and (max-width: 479px) {
+    .price__info {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .arrow-scroll_right {
   -webkit-transform: translate(0%, -50%) rotate(90deg);
@@ -755,7 +844,8 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   opacity: 0.9;
-  visibility: hidden; }
+  visibility: hidden;
+  z-index: 999; }
   .composition__list:hover {
     visibility: visible; }
 
@@ -769,6 +859,12 @@
   display: -ms-flexbox;
   display: flex;
   position: absolute; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .composition {
+      left: 1%; } }
+  @media (min-width: 320px) and (max-width: 479px) {
+    .composition {
+      left: 0; } }
 
 .composition__item_icon {
   width: 2.64286rem;

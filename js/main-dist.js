@@ -1,2 +1,2 @@
-var hamburger=document.querySelector(".hamburger");console.log(hamburger),hamburger.addEventListener("click",function(){hamburger.classList.contains("hamburger_active")?hamburger.classList.remove("hamburger_active"):hamburger.classList.add("hamburger_active")});
+var hamburger=document.querySelector(".hamburger"),navigation=document.querySelector(".navigation-list");hamburger.addEventListener("click",function(){hamburger.classList.contains("hamburger_active")?(hamburger.classList.remove("hamburger_active"),navigation.classList.remove("navigation-list_active")):(hamburger.classList.add("hamburger_active"),navigation.classList.add("navigation-list_active"))});
 //# sourceMappingURL=main-dist.js.map
