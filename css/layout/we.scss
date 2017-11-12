@@ -1,0 +1,66 @@
+        .section_we {
+            background: url(./../images/bg/bg-we.png) 50% 50% no-repeat;
+            height: 100vh;
+            background-size: cover;
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            @include phone {
+                min-width: rem(460);
+            }
+        }
+
+        .we__container {
+            flex-direction: column;
+        }
+
+        .about-list {
+            display: flex;
+            align-items: baseline;
+            @include phone {
+                flex-direction: column;
+            }
+        }
+
+        .about__item {
+            text-align: center;
+            flex: 3;
+            padding-left: rem(10);
+            @include phone {
+                display: flex;
+                flex-direction: row;
+                padding: 0rem 1.21429rem;
+            }
+        }
+
+        .section__title_we {
+            text-align: center;
+            padding-bottom: rem(80);
+            @include phone {
+                padding-bottom: rem(35);
+            }
+        }
+
+        .about__name {
+            font-family: 'lifehackmedium';
+            color: #2f3234;
+            font-size: rem(24.1);
+        }
+
+        .about__text {
+            font-family: 'ubuntulight';
+            color: #848281;
+            font-size: rem(14.03);
+            margin-top: rem(15);
+            line-height: 1.9;
+        }
+
+        .about__info {
+            @include phone {
+                padding: 1.14286rem;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+

@@ -1,0 +1,119 @@
+                                                    .section_info {
+                                                        background: url(./../images/bg/texture.png) 50% 50% no-repeat;
+                                                        height: 100vh;
+                                                        min-height: 650px;
+                                                        background-size: cover;
+                                                        position: relative;
+                                                        @include phone {
+                                                            min-width: rem(460);
+                                                        }
+                                                    }
+
+                                                    .main {
+                                                        @include phone {
+                                                            margin-top: 45px;
+                                                        }
+                                                    }
+
+                                                    .main__text {
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        flex-direction: column;
+                                                        margin-top: 1rem;
+                                                        @include tablet {
+                                                            padding: 0rem 3.14286rem;
+                                                            text-align: center;
+                                                        }
+                                                    }
+
+                                                    .section__title_info {
+                                                        color: #f9b43b;
+                                                    }
+
+                                                    .section__title_subtitle {
+                                                        color: #ffffff;
+                                                        font-family: 'lifehackmedium';
+                                                        font-size: rem(65);
+                                                        @include tablet {
+                                                            font-size: rem(57);
+                                                        }
+                                                        @include phone {
+                                                            font-size: rem(54);
+                                                        }
+                                                    }
+
+                                                    .arrow-scroll {
+                                                        justify-content: center;
+                                                        position: absolute;
+                                                    }
+
+                                                    .arrow-scroll_info {
+                                                        left: 50%;
+                                                        bottom: rem(50);
+                                                        transform: translateX(50%);
+                                                        width: rem(29);
+                                                        height: rem(15);
+                                                        @include tablet {
+                                                            bottom: 1.57143rem;
+                                                        }
+                                                        @include phone {
+                                                            bottom: rem(25);
+                                                        }
+                                                    }
+
+                                                    .info__container {
+                                                        display: flex;
+                                                        margin: 0 auto;
+                                                        width: rem(940);
+                                                        position: absolute;
+                                                        top: 50%;
+                                                        left: 50%;
+                                                        transform: translate(-50%, -50%);
+                                                        @include tablet {
+                                                            flex-direction: column;
+                                                            align-items: center;
+                                                            text-align: center;
+                                                        }
+                                                        @include phone {
+                                                            flex-direction: column;
+                                                            align-items: center;
+                                                            text-align: center;
+                                                        }
+                                                    }
+
+                                                    .section__title_main {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        @include tablet {
+                                                            align-items: center;
+                                                        }
+                                                    }
+
+                                                    .main__photo {
+                                                        height: 100%;
+                                                        width: 100%;
+                                                        @include tablet {
+                                                            width: initial;
+                                                            margin-top: rem(-70px);
+                                                        }
+                                                        @include phone {
+                                                            margin-top: -4.14286rem;
+                                                            width: initial;
+                                                        }
+                                                    }
+
+                                                    .main__img {
+                                                        width: 100%;
+                                                        @include tablet {
+                                                            width: 80%;
+                                                        }
+                                                        @include phone {
+                                                            width: 70%;
+                                                        }
+                                                    }
+
+                                                    .content__link_icon {
+                                                        fill: #ffffff;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                    }
