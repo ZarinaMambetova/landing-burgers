@@ -925,7 +925,7 @@
   right: 0;
   background-color: #1f2122;
   opacity: 0.93;
-  width: 35%;
+  padding-right: 1.07143rem;
   height: 100%;
   padding-left: 5.71429rem; }
   @media (min-width: 480px) and (max-width: 767px) {
@@ -1517,19 +1517,13 @@ h3 {
   margin: 0 auto; }
 
 .container {
-  width: 960px;
+  width: 95%;
   margin: 0 auto;
   display: flex;
   padding: 0rem 0.71429rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox; }
-  @media (min-width: 480px) and (max-width: 767px) {
-    .container {
-      width: 95%; } }
-  @media (min-width: 320px) and (max-width: 479px) {
-    .container {
-      width: 95%; } }
 
 .section__title {
   font-family: "gagalinregular";

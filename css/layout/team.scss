@@ -14,13 +14,13 @@
                                                 right: 0;
                                                 background-color: #1f2122;
                                                 opacity: 0.93;
-                                                width: 35%;
+                                                padding-right: rem(15);
                                                 height: 100%;
                                                 padding-left: rem(80);
                                                 @include tablet {
                                                     width: 100%;
                                                     text-align: center;
-                                                }
+                                                 }
                                                 @include phone {
                                                     width: 100%;
                                                     text-align: center;
