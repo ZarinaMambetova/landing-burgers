@@ -1,7 +1,8 @@
-    .circle {
+    .onepage-pagination {
         position: fixed;
         right: rem(50);
-        top: rem(50);
+        top: 5.57143rem;
+        z-index: 500;
         @include tablet {
             display: none;
         }
@@ -10,13 +11,13 @@
         }
     }
 
-    .circle-list {
+    .onepage-pagination ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
     }
 
-    .circle__link {
+    .onepage-pagination li a {
         width: rem(5);
         height: rem(5);
         background: #ffffff;
@@ -24,11 +25,11 @@
         display: inline-block;
     }
 
-    .circle__item {
+    .onepage-pagination li {
         position: relative;
     }
 
-    .circle__item:after {
+    .onepage-pagination li a:after {
         content: '';
         display: inline-block;
         position: absolute;
@@ -40,10 +41,6 @@
         top: 0.16rem;
     }
 
-    .circle__item:hover:after {
-        border-color: #ffffff;
-    }
-
-    .circle__item-type-active:after {
+    .onepage-pagination li a.active:after {
         border-color: #ffffff;
     }

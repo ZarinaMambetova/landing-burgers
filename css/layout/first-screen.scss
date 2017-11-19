@@ -52,7 +52,7 @@
                                                         bottom: rem(50);
                                                         transform: translateX(50%);
                                                         width: rem(29);
-                                                        height: rem(15);
+                                                         height: rem(15);
                                                         @include tablet {
                                                             bottom: 1.57143rem;
                                                         }
@@ -91,7 +91,7 @@
 
                                                     .main__photo {
                                                         height: 100%;
-                                                        width: 100%;
+                                                        width: 60%;
                                                         @include tablet {
                                                             width: initial;
                                                             margin-top: rem(-70px);

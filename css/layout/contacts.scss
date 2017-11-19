@@ -4,7 +4,6 @@
                     min-height: rem(650);
                     background-size: cover;
                     position: relative;
- 
                     @include phone {
                         min-width: rem(460);
                     }
@@ -27,6 +26,7 @@
                 }
 
                 .footer__container {
+                    width: rem(940);
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -36,7 +36,7 @@
                     @include phone {
                         flex-direction: column;
                     }
-                }
+                } 
 
                 .adress {
                     font-family: 'ubuntulight';

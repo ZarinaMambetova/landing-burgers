@@ -11,6 +11,11 @@
                                                                                                                     }
                                                                                                                 }
 
+                                                                                                                .burgers__container {
+                                                                                                                    width: rem(940);
+                                                                                                                     max-width: 66.75rem;
+                                                                                                                }
+
                                                                                                                 .burgers__item {
                                                                                                                     display: flex;
                                                                                                                     @include tablet {
@@ -60,6 +65,7 @@
                                                                                                                 }
 
                                                                                                                 .burgers__col_photo {
+                                                                                                                    margin-left: 15px;
                                                                                                                     @include tablet {
                                                                                                                         display: flex;
                                                                                                                         justify-content: center;
@@ -87,7 +93,7 @@
                                                                                                                 }
 
                                                                                                                 .burgers {
-                                                                                                                    width: 100%;
+                                                                                                                    width: 95%;
                                                                                                                     margin-top: rem(72);
                                                                                                                     @include tablet {
                                                                                                                         width: 80%;
@@ -152,6 +158,11 @@
                                                                                                                     }
                                                                                                                 }
 
+                                                                                                                .burgers__price {
+                                                                                                                    display: flex;
+                                                                                                                    align-items: baseline;
+                                                                                                                }
+
                                                                                                                 .price__info {
                                                                                                                     align-items: baseline;
                                                                                                                     display: flex;
@@ -163,20 +174,26 @@
                                                                                                                     }
                                                                                                                 }
 
-                                                                                                                .arrow-scroll_right {
-                                                                                                                    transform: translate(0%, -50%) rotate(90deg);
-                                                                                                                    left: 1%;
-                                                                                                                    width: rem(29);
-                                                                                                                    height: rem(15);
+                                                                                                                .owl-prev {
+                                                                                                                    position: absolute;
+                                                                                                                    background: url(./../images/icon/arrow-scroll.svg) 50% 50% no-repeat !important;
+                                                                                                                    background-size: contain;
+                                                                                                                    width: 29px;
+                                                                                                                    height: 15px;
                                                                                                                     top: 50%;
+                                                                                                                    transform: translate(0%, -50%) rotate(90deg);
+                                                                                                                    left: -6%;
                                                                                                                 }
 
-                                                                                                                .arrow-scroll_left {
-                                                                                                                    transform: translate(0%, -50%) rotate(-90deg);
-                                                                                                                    right: 1%;
-                                                                                                                    width: rem(29);
-                                                                                                                    height: rem(15);
+                                                                                                                .owl-next {
+                                                                                                                    position: absolute;
+                                                                                                                    background: url(./../images/icon/arrow-scroll.svg) 50% 50% no-repeat !important;
+                                                                                                                    background-size: contain;
+                                                                                                                    width: 29px;
+                                                                                                                    height: 15px;
                                                                                                                     top: 50%;
+                                                                                                                    transform: translate(0%, -50%) rotate(-90deg);
+                                                                                                                    right: -6%;
                                                                                                                 }
 
                                                                                                                 .content__link_icon {
