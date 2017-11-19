@@ -38,3 +38,9 @@ $('.owl-carousel').owlCarousel({
     dots: false,
 
 })
+
+$('.accordion').asAccordion({
+
+    namespace: 'accordion'
+
+});

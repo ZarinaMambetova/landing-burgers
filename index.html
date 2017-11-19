@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Бургерная</title>
+    <link rel="stylesheet" href="css/asAccordion.css">
 <link rel="stylesheet" href="css/owl.carousel.css">
 <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/onepage-scroll.css">
@@ -619,12 +620,10 @@
         <div class="container team__container">
             <div class="team__content">
                 <h1 class="section__title team__title">КОМАНДА</h1>
-                <ul class="team-accord">
-                    <li class="team-accord__item">
-                        <a href="#" class="team-accord__link">
-                            <span class="team-accord__name">Дэниэл Редклиф</span>
-                        </a>
-                        <div class="team-accord__description">
+                <ul data-direction="vertical" class="accordion accordion--basic accordion--vertical team-accord">
+                    <li class="accordion__panel team-accord__item">
+                         <span class="accordion__heading team-accord__name">Дэниэл Редклиф</span>
+                        <div class="accordion__expander team-accord__description">
                             <div class="team-accord__photo">
                                 <img src="images/content/aphex.png" alt="photo" class="team-accord__image">
                             </div>
@@ -634,11 +633,9 @@
                             </div>
                         </div>
                     </li>
-                    <li class="team-accord__item ">
-                        <a href="#" class="team-accord__link">
-                            <span class="team-accord__name">Дэниэл Редклиф</span>
-                        </a>
-                        <div class="team-accord__description">
+                    <li class="accordion__panel team-accord__item">
+                            <span class="accordion__heading team-accord__name">Дэниэл Редклиф</span>
+                        <div class="accordion__expander team-accord__description">
                             <div class="team-accord__description">
                                 <img src="images/content/aphex.png" alt="photo" class="team-accord__image">
                             </div>
@@ -648,11 +645,9 @@
                             </div>
                         </div>
                     </li>
-                    <li class="team-accord__item">
-                        <a href="#" class="team-accord__link">
-                            <span class="team-accord__name">Дэниэл Редклиф</span>
-                        </a>
-                        <div class="team-accord__description">
+                    <li class="accordion__panel team-accord__item">
+                            <span class="accordion__heading team-accord__name">Дэниэл Редклиф</span>
+                        <div class="accordion__expander team-accord__description">
                             <div class="team-accord__photo">
                                 <img src="images/content/aphex.png" alt="photo" class="team-accord__image">
                             </div>
@@ -662,11 +657,9 @@
                             </div>
                         </div>
                     </li>
-                    <li class="team-accord__item ">
-                        <a href="#" class="team-accord__link">
-                            <span class="team-accord__name">Дэниэл Редклиф</span>
-                        </a>
-                        <div class="team-accord__description">
+                    <li class="accordion__panel team-accord__item ">
+                            <span class="accordion__heading team-accord__name">Дэниэл Редклиф</span>
+                         <div class="accordion__expander team-accord__description">
                             <div class="team-accord__photo">
                                 <img src="images/content/aphex.png" alt="photo" class="team-accord__image">
                             </div>
@@ -983,6 +976,7 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.onepage-scroll.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery-asAccordion.js"></script>
     <script src="js/main.js"></script>
 </body>
 
