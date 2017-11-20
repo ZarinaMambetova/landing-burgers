@@ -611,6 +611,9 @@
 .modal_reviews {
   display: none; }
 
+.fancybox-overlay {
+  background: rgba(47, 50, 52, 0.92); }
+
 .section_burgers {
   background-image: -webkit-linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
   height: 100vh;
@@ -723,9 +726,23 @@
   height: 3rem; }
 
 .burgers__image {
-  max-width: 100%; }
+  max-width: 98%;
+  max-height: 18.75rem;
+  width: auto !important; }
 
 .burgers {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 85%;
   margin-top: 5.14286rem; }
   @media (min-width: 480px) and (max-width: 767px) {
@@ -989,7 +1006,15 @@
   color: #ffffff;
   font-family: 'gagalinregular';
   font-size: 1rem;
-  position: relative; }
+  position: relative;
+  display: block;
+  left: 1.42857rem; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .team-accord__name {
+      left: 0; } }
+  @media (min-width: 320px) and (max-width: 479px) {
+    .team-accord__name {
+      left: 0; } }
 
 .team-accord__posicion {
   font-size: 1rem;
@@ -1002,6 +1027,12 @@
   color: #ffffff;
   font-family: 'ubuntulight';
   line-height: 2; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .team-accord__text {
+      padding: 0 46px; } }
+  @media (min-width: 320px) and (max-width: 479px) {
+    .team-accord__text {
+      padding: 0 46px; } }
 
 .team__title {
   color: #f9b43b;
@@ -1072,20 +1103,54 @@
 .accordion--active .accordion__expander {
   height: 100%; }
 
-.team-accord__name:before {
-  content: "";
-  position: absolute;
-  border: 0.35714rem solid transparent;
-  border-top: 0.5rem solid #f9b43b;
-  left: -1.78571rem;
-  bottom: -0.07143rem; }
-
 @media (min-width: 480px) and (max-width: 767px) {
   .team-accord__info {
     margin: 1.07143rem 0rem; } }
 
 .accordion--active {
   height: initial !important; }
+
+.team-accord__name:before,
+.team-accord__name:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -1rem;
+  top: 0.4rem;
+  width: 0;
+  height: 0; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .team-accord__name:before,
+    .team-accord__name:after {
+      left: 17.5rem; } }
+  @media (min-width: 320px) and (max-width: 479px) {
+    .team-accord__name:before,
+    .team-accord__name:after {
+      left: 9rem; } }
+
+.team-accord__name:before {
+  border-top: 0.4375rem solid #f9b43b;
+  border-left: 0.3125rem solid transparent;
+  border-right: 0.3125rem solid transparent;
+  border-bottom: 0rem solid transparent;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.team-accord__name:after {
+  display: none;
+  border-bottom: 0.4375rem solid #f9b43b;
+  border-left: 0.3125rem solid transparent;
+  border-right: 0.3125rem solid transparent;
+  border-top: 0rem solid transparent; }
+
+.accordion--active .team-accord__name:before {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
 
 .section_menu {
   background: url(./../images/bg/deaf2.png) 50% 50% no-repeat;

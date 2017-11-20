@@ -88,10 +88,17 @@
                                                                                                                 }
 
                                                                                                                 .burgers__image {
-                                                                                                                    max-width: 100%;
+                                                                                                                    max-width: 98%;
+                                                                                                                    max-height: 18.75rem;
+                                                                                                                    width: auto!important;
                                                                                                                 }
 
                                                                                                                 .burgers {
+                                                                                                                    align-items: flex-end;
+                                                                                                                    
+                                                                                                                    display: flex;
+                                                                                                                 
+                                                                                                                    justify-content: center;
                                                                                                                     width: 85%;
                                                                                                                     margin-top: rem(72);
                                                                                                                     @include tablet {

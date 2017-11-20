@@ -56,9 +56,9 @@
     //   margin-right: 10px;
 }
 
-.accordion__heading>.-icon:before {
-    content: "\ff0b";
-}
+// .accordion__heading>.-icon:before {
+//     content: "\ff0b";
+// }
 
 // .accordion__expander {
 //   padding: 15px;
@@ -68,8 +68,8 @@
     color: #f9b43b;
 }
 
-.accordion--active .accordion__heading > .-icon:before {
-  content: "\2014";
+// .accordion--active .accordion__heading > .-icon:before {
+//   content: "\2014";
 }
 .accordion--horizontal {
     height: 260px;

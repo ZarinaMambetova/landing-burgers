@@ -26,9 +26,6 @@
 .accordion__heading {
   cursor: pointer; }
 
-.accordion__heading > .-icon:before {
-  content: "\ff0b"; }
-
 .accordion--active .accordion__heading {
   color: #f9b43b; }
 
