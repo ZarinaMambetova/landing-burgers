@@ -4,10 +4,6 @@
                     min-height: 650px;
                     background-size: cover;
                     position: relative;
-  
-                    @include phone {
-                        min-width: rem(460);
-                    }
                 }
 
                 .menu-accord {
@@ -19,6 +15,7 @@
                     top: 0;
                     right: 0;
                     bottom: 0;
+                    height: 100%;
                 }
 
                 .menu-accord__title {
@@ -44,8 +41,6 @@
                 }
 
                 .menu-accord__description {
-                    width: 0;
-                    overflow: hidden;
                     background-color: #2f3234;
                     opacity: 0.93;
                 }
@@ -62,16 +57,6 @@
                     background-size: cover;
                 }
 
-                .menu-accord__item-type-active .menu-accord__description {
-                    width: 540px;
-                    @include tablet {
-                        width: 85%;
-                    }
-                    @include phone {
-                        width: 26.64286rem;
-                    }
-                }
-
                 .menu-accord__item-type-active {
                     @include phone {
                         left: 25%;
@@ -79,15 +64,14 @@
                     }
                 }
 
-                .menu-accord__item-type-active .menu-accord__title {
-                    color: #f9b43b;
-                }
-
                 .menu-accord__item {
                     display: flex;
+                    overflow: hidden;
                 }
 
                 .menu__title {
                     color: #ffffff;
                     margin-top: rem(115);
                 }
+
+              

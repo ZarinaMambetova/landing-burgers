@@ -41,6 +41,20 @@ $('.owl-carousel').owlCarousel({
 
 $('.accordion').asAccordion({
 
-    namespace: 'accordion'
+    namespace: 'accordion',
+    
 
 });
+
+$('.menu-accord').asAccordion({
+
+    namespace: 'accordion',
+    direction: 'horizontal',
+    speed: 500,
+    easing: 'ease-in-out',
+});
+
+
+    $("[data-fancybox]").fancybox({
+        // Options will go here
+    });

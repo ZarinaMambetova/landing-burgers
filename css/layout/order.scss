@@ -1,12 +1,9 @@
-                                                                                                .section_order {
+                                                                                                    .section_order {
                                                                                                     background: url(./../images/bg/bg-texture.png) 50% 50% no-repeat;
                                                                                                     height: 100vh;
                                                                                                     min-height: 650px;
                                                                                                     background-size: cover;
                                                                                                     position: relative;
-                                                                                                    @include phone {
-                                                                                                        min-width: rem(460);
-                                                                                                    }
                                                                                                 }
 
                                                                                                 .form__elem {
@@ -159,72 +156,65 @@
                                                                                                     transform: translateY(-50%);
                                                                                                     opacity: 0;
                                                                                                     transition: .5s;
-                                                                                                }
-
-                                                                                                input[type="radio"]:checked+.form__block_title_radio:before {
-                                                                                                    border: rem(1) solid #ffffff;
-                                                                                                    ;
-                                                                                                }
-
-                                                                                                input[type="radio"]:checked+.form__block_title_radio {
-                                                                                                    color: #ffffff;
-                                                                                                    ;
-                                                                                                }
-
-                                                                                                input[type="radio"]:checked+.form__block_title_radio:after {
-                                                                                                    opacity: 1;
-                                                                                                }
-
-                                                                                                .form__checkbox {
-                                                                                                    display: none;
-                                                                                                }
-
-                                                                                                .form__block_title_checkbox {
-                                                                                                    margin-top: rem(-6);
                                                                                                     @include phone {
-                                                                                                        margin-left: rem(167);
-                                                                                                        margin-top: 0;
+                                                                                                        left: 0.3534rem;
+                                                                                                        top: 27%;
                                                                                                     }
-                                                                                                }
-
-                                                                                                .form__checkbox+.form__block_title {
-                                                                                                    position: relative;
-                                                                                                }
-
-                                                                                                .form__checkbox+.form__block_title:hover {
-                                                                                                    cursor: pointer;
-                                                                                                }
-
-                                                                                                .form__checkbox+.form__block_title:before {
-                                                                                                    content: '';
-                                                                                                    display: inline-block;
-                                                                                                    width: rem(15);
-                                                                                                    height: rem(15);
-                                                                                                    background-color: #ffffff;
-                                                                                                    margin-right: rem(10);
-                                                                                                }
-
-                                                                                                .form__checkbox+.form__block_title:after {
-                                                                                                    content: '✔';
-                                                                                                    display: inline-block;
-                                                                                                    color: #e35028;
-                                                                                                    position: absolute;
-                                                                                                    left: rem(2);
-                                                                                                    opacity: 0;
-                                                                                                    -webkit-transition: all 0.2s linear;
-                                                                                                    transition: all 0.2s linear;
-                                                                                                }
-
-                                                                                                .form__checkbox:checked+.form__block_title:after {
-                                                                                                    opacity: 1;
-                                                                                                }
-
-                                                                                                .button_clear {
-                                                                                                    color: #ffffff;
-                                                                                                    font-family: "ubuntumedium";
-                                                                                                    font-size: rem(13);
-                                                                                                    text-align: center;
-                                                                                                    text-decoration: none;
-                                                                                                    transition: .5s;
-                                                                                                    padding: rem(10) rem(20);
-                                                                                                }
+                                                                                                    }
+                                                                                                    input[type="radio"]:checked+.form__block_title_radio:before {
+                                                                                                        border: rem(1) solid #ffffff;
+                                                                                                        ;
+                                                                                                    }
+                                                                                                    input[type="radio"]:checked+.form__block_title_radio {
+                                                                                                        color: #ffffff;
+                                                                                                        ;
+                                                                                                    }
+                                                                                                    input[type="radio"]:checked+.form__block_title_radio:after {
+                                                                                                        opacity: 1;
+                                                                                                    }
+                                                                                                    .form__checkbox {
+                                                                                                        display: none;
+                                                                                                    }
+                                                                                                    .form__block_title_checkbox {
+                                                                                                        margin-top: rem(-6);
+                                                                                                        @include phone {
+                                                                                                            margin-left: rem(167);
+                                                                                                            margin-top: 0;
+                                                                                                        }
+                                                                                                    }
+                                                                                                    .form__checkbox+.form__block_title {
+                                                                                                        position: relative;
+                                                                                                    }
+                                                                                                    .form__checkbox+.form__block_title:hover {
+                                                                                                        cursor: pointer;
+                                                                                                    }
+                                                                                                    .form__checkbox+.form__block_title:before {
+                                                                                                        content: '';
+                                                                                                        display: inline-block;
+                                                                                                        width: rem(15);
+                                                                                                        height: rem(15);
+                                                                                                        background-color: #ffffff;
+                                                                                                        margin-right: rem(10);
+                                                                                                    }
+                                                                                                    .form__checkbox+.form__block_title:after {
+                                                                                                        content: '✔';
+                                                                                                        display: inline-block;
+                                                                                                        color: #e35028;
+                                                                                                        position: absolute;
+                                                                                                        left: rem(2);
+                                                                                                        opacity: 0;
+                                                                                                        -webkit-transition: all 0.2s linear;
+                                                                                                        transition: all 0.2s linear;
+                                                                                                    }
+                                                                                                    .form__checkbox:checked+.form__block_title:after {
+                                                                                                        opacity: 1;
+                                                                                                    }
+                                                                                                    .button_clear {
+                                                                                                        color: #ffffff;
+                                                                                                        font-family: "ubuntumedium";
+                                                                                                        font-size: rem(13);
+                                                                                                        text-align: center;
+                                                                                                        text-decoration: none;
+                                                                                                        transition: .5s;
+                                                                                                        padding: rem(10) rem(20);
+                                                                                                    }

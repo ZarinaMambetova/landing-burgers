@@ -66,7 +66,7 @@
             </div>
 
             <div class="arrow-scroll arrow-scroll_info">
-                <a href="#" class="scroll__link" target="_blank">
+                <a href="#2" class="scroll__link" target="_blank">
                     <svg id="arrow-scroll" class="content__link_icon">
                         <use xlink:href="images/icon/sprite.svg#arrow-scroll"></use>
 
@@ -677,12 +677,12 @@
     <section class="section section_menu">
         <div class="container menu__container">
             <h2 class="section__title menu__title">МЕНЮ</h2>
-            <ul class="menu-accord">
-                <li class="menu-accord__item menu-accord__item-type-active">
-                    <a href="#" class="menu-accord__link" style="background-image:url(images/bg/for-meat.png)">
-                        <span class="menu-accord__title">ДЛЯ МЯСОЕДОВ</span>
-                    </a>
-                    <div class="menu-accord__description">
+            <ul data-direction="horizontal" class="-accordion -accordion--basic -accordion--horizontal menu-accord">
+                <li class="-accordion__panel menu-accord__item menu-accord__item-type-active" style="background-image:url(images/bg/for-meat.png)">
+          
+                        <span class="-accordion__heading menu-accord__title">ДЛЯ МЯСОЕДОВ</span>
+                   
+                    <div class="-accordion__expander menu-accord__description">
                         <p class="menu-accord__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
                             механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал
                             особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания,
@@ -692,11 +692,11 @@
                         </p>
                     </div>
                 </li>
-                <li class="menu-accord__item">
-                    <a href="#" class="menu-accord__link" style="background-image:url(images/bg/for-vegan.png)">
-                        <span class="menu-accord__title">ВЕГЕТАРИАНСКОЕ</span>
-                    </a>
-                    <div class="menu-accord__description">
+                <li class="-accordion__panel menu-accord__item" style="background-image:url(images/bg/for-vegan.png)">
+         
+                        <span class="-accordion__heading menu-accord__title">ВЕГЕТАРИАНСКОЕ</span>
+                   
+                    <div class="-accordion__expander menu-accord__description">
                         <p class="menu-accord__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
                             механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал
                             особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания,
@@ -706,11 +706,11 @@
                         </p>
                     </div>
                 </li>
-                <li class="menu-accord__item">
-                    <a href="#" class="menu-accord__link" style="background-image:url(images/bg/for-diet.png)">
-                        <span class="menu-accord__title">ДИЕТИЧЕСКОЕ</span>
-                    </a>
-                    <div class="menu-accord__description">
+                <li class="-accordion__panel menu-accord__item" style="background-image:url(images/bg/for-diet.png)">
+                   
+                        <span class="-accordion__heading menu-accord__title">ДИЕТИЧЕСКОЕ</span>
+                 
+                    <div class="-accordion__expander menu-accord__description">
                         <p class="menu-accord__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
                             механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал
                             особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания,
@@ -733,7 +733,7 @@
                     </div>
                     <p class="reviews__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <a href="#" class="reviews__button">ПОДРОБНЕЕ</a>
+                    <a data-fancybox data-src="#hidden-content" class="reviews__button" href="javascript:;">ПОДРОБНЕЕ</a>
                 </div>
             </li>
             <li class="reviews__item" style="background-image:url(images/bg/photo-2.png)">
@@ -807,9 +807,15 @@
                 </div>
             </li>
         </ul>
+            <div  id="hidden-content" class="modal_reviews">
+                <h3 class="reviews__name reviews__name_modal">
+                    Константин Спилберг
+                </h3>
+                <p class="reviews__comment reviews__comment_modal">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
+                    такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+            
+            </div>
     </section>
-
-
     <section class="section section_order">
         <div class="container order__container">
             <h2 class="section__title section__title_order">Закажите доставку</h2>
@@ -944,6 +950,9 @@
 
 
     </div>
+
+
+
         <nav class="onepage-pagination">
             <ul class="onepage-pagination">
                 <li class="onepage-pagination">
@@ -972,6 +981,9 @@
                 </li>
             </ul>
         </nav>
+
+  
+
 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.onepage-scroll.js"></script>

@@ -6,14 +6,11 @@
                                                                                                                     display: flex;
                                                                                                                     align-items: center;
                                                                                                                     position: relative;
-                                                                                                                    @include phone {
-                                                                                                                        min-width: rem(460);
-                                                                                                                    }
                                                                                                                 }
 
                                                                                                                 .burgers__container {
                                                                                                                     width: rem(940);
-                                                                                                                     max-width: 66.75rem;
+                                                                                                                    max-width: 66.75rem;
                                                                                                                 }
 
                                                                                                                 .burgers__item {
@@ -32,6 +29,8 @@
                                                                                                                 }
 
                                                                                                                 .burgers__col_info {
+                                                                                                                    margin-left: -78px;
+                                                                                                                    padding: 0 20px;
                                                                                                                     @include tablet {
                                                                                                                         text-align: center;
                                                                                                                         padding: rem(0) rem(35);
@@ -65,7 +64,7 @@
                                                                                                                 }
 
                                                                                                                 .burgers__col_photo {
-                                                                                                                    margin-left: 15px;
+                                                                                                                    margin-left: 20px;
                                                                                                                     @include tablet {
                                                                                                                         display: flex;
                                                                                                                         justify-content: center;
@@ -93,10 +92,10 @@
                                                                                                                 }
 
                                                                                                                 .burgers {
-                                                                                                                    width: 95%;
+                                                                                                                    width: 85%;
                                                                                                                     margin-top: rem(72);
                                                                                                                     @include tablet {
-                                                                                                                        width: 80%;
+                                                                                                                        width: 55%;
                                                                                                                         margin-top: 0;
                                                                                                                     }
                                                                                                                     @include phone {
@@ -109,11 +108,14 @@
                                                                                                                     position: absolute;
                                                                                                                     text-align: center;
                                                                                                                     opacity: 0.5;
+                                                                                                                    bottom: -3%;
                                                                                                                     @include tablet {
                                                                                                                         right: 1%;
+                                                                                                                        bottom: initial;
                                                                                                                     }
                                                                                                                     @include phone {
                                                                                                                         right: 1%;
+                                                                                                                        bottom: initial;
                                                                                                                     }
                                                                                                                 }
 
@@ -182,7 +184,7 @@
                                                                                                                     height: 15px;
                                                                                                                     top: 50%;
                                                                                                                     transform: translate(0%, -50%) rotate(90deg);
-                                                                                                                    left: -6%;
+                                                                                                                    left: 0;
                                                                                                                 }
 
                                                                                                                 .owl-next {
@@ -193,7 +195,7 @@
                                                                                                                     height: 15px;
                                                                                                                     top: 50%;
                                                                                                                     transform: translate(0%, -50%) rotate(-90deg);
-                                                                                                                    right: -6%;
+                                                                                                                    right: 0;
                                                                                                                 }
 
                                                                                                                 .content__link_icon {
@@ -274,4 +276,9 @@
                                                                                                                     font-size: rem(14);
                                                                                                                     color: #2f3234;
                                                                                                                     text-align: right;
+                                                                                                                }
+
+                                                                                                                .owl-stage {
+                                                                                                                    display: flex;
+                                                                                                                    align-items: center;
                                                                                                                 }

@@ -4,9 +4,7 @@
                                                         min-height: 650px;
                                                         background-size: cover;
                                                         position: relative;
-                                                        @include phone {
-                                                            min-width: rem(460);
-                                                        }
+                                              
                                                     }
 
                                                     .main {

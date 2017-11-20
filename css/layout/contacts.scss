@@ -4,10 +4,8 @@
                     min-height: rem(650);
                     background-size: cover;
                     position: relative;
-                    @include phone {
-                        min-width: rem(460);
-                    }
-                }
+                
+                } 
 
                 .footer {
                     position: absolute;
@@ -20,7 +18,7 @@
                     height: rem(60);
                     justify-content: space-between;
                     @include phone {
-                        height: rem(115);
+                        height: 6.5rem;
                         flex-direction: column;
                     }
                 }
@@ -50,7 +48,7 @@
                 .footer__col {
                     width: 50%;
                     @include phone {
-                        margin-top: rem(15);
+                        margin-top: 0.5rem;
                         text-align: center;
                         width: initial;
                     }

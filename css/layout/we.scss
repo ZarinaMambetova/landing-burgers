@@ -5,9 +5,7 @@
             min-height: 650px;
             display: flex;
             align-items: center;
-            @include phone {
-                min-width: rem(460);
-            }
+
         }
 
         .we__container {
@@ -37,7 +35,7 @@
             text-align: center;
             padding-bottom: rem(80);
             @include phone {
-                padding-bottom: rem(35);
+                padding-bottom: rem(15);
             }
         }
 
@@ -57,7 +55,7 @@
 
         .about__info {
             @include phone {
-                padding: 1.14286rem;
+                padding: 0.7rem;
                 text-align: left;
                 display: flex;
                 flex-direction: column;

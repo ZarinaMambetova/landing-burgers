@@ -9,7 +9,8 @@
   padding: 0;
   margin: 0; }
 
-.accordion:before, .accordion:after {
+.accordion:before,
+.accordion:after {
   display: table;
   content: "\20"; }
 
@@ -25,19 +26,14 @@
 .accordion__heading {
   cursor: pointer; }
 
-.accordion__heading > .-icon {
-  margin-top: 3px;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: bold;
-  color: #bbb; }
-
-.accordion__heading > .-icon--left {
-  float: left;
-  margin-right: 10px; }
+.accordion__heading > .-icon:before {
+  content: "\ff0b"; }
 
 .accordion--active .accordion__heading {
-  color: #687175; }
+  color: #f9b43b; }
+
+.accordion--active .accordion__heading > .-icon:before {
+  content: "\2014"; }
 
 .accordion--horizontal {
   height: 260px; }
