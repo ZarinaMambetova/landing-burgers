@@ -4,8 +4,7 @@
                     min-height: rem(650);
                     background-size: cover;
                     position: relative;
-                
-                } 
+                }
 
                 .footer {
                     position: absolute;
@@ -34,7 +33,7 @@
                     @include phone {
                         flex-direction: column;
                     }
-                } 
+                }
 
                 .adress {
                     font-family: 'ubuntulight';
@@ -94,4 +93,37 @@
                     fill: #e35028;
                     height: rem(12);
                     width: rem(13);
+                }
+
+                .animated-modal {
+                    max-width: 550px;
+                    border-radius: 4px;
+                    overflow: hidden;
+                    transform: translateY(-50px);
+                    transition: all .7s;
+                }
+
+                .animated-modal h2,
+                .animated-modal p {
+                    transform: translateY(-50px);
+                    opacity: 0;
+                    transition-property: transform, opacity;
+                    transition-duration: .4s;
+                }
+                /* Final state */
+
+                .fancybox-slide--current .animated-modal,
+                .fancybox-slide--current .animated-modal h2,
+                .fancybox-slide--current .animated-modal p {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+                /* Reveal content with different delays */
+
+                .fancybox-slide--current .animated-modal h2 {
+                    transition-delay: .1s;
+                }
+
+                .fancybox-slide--current .animated-modal p {
+                    transition-delay: .3s;
                 }

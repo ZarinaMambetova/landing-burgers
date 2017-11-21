@@ -4,7 +4,7 @@
 *
 * Copyright (c) amazingSurge
 * Released under the LGPL-3.0 license
-*/
+// */
 .accordion {
   padding: 0;
   margin: 0; }
@@ -28,9 +28,6 @@
 
 .accordion--active .accordion__heading {
   color: #f9b43b; }
-
-.accordion--active .accordion__heading > .-icon:before {
-  content: "\2014"; }
 
 .accordion--horizontal {
   height: 260px; }

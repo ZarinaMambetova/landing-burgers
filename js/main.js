@@ -52,9 +52,12 @@ $('.menu-accord').asAccordion({
     direction: 'horizontal',
     speed: 500,
     easing: 'ease-in-out',
+    
 });
 
-
-    $("[data-fancybox]").fancybox({
+$(function() {
+        $("[data-fancybox]").fancybox({
         // Options will go here
     });
+})
+
