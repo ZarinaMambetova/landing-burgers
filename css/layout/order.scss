@@ -10,7 +10,7 @@
                                                                                                     display: flex;
                                                                                                     @include tablet {
                                                                                                         flex-direction: column;
-                                                                                                        margin: 0rem 7.5rem;
+                                                                                                        margin: 0rem 2.5rem;
                                                                                                     }
                                                                                                     @include phone {
                                                                                                         flex-direction: column;
@@ -115,11 +115,9 @@
 
                                                                                                 .form__row_radio {
                                                                                                     display: inline-block;
-                                                                                                    margin-left: rem(-16);
+                                                                                                    
                                                                                                     margin-right: rem(15);
-                                                                                                    @include phone {
-                                                                                                        margin-left: 2.21429rem;
-                                                                                                    }
+                                                                                                  
                                                                                                 }
 
                                                                                                 input[type="radio"] {
@@ -158,7 +156,7 @@
                                                                                                     transition: .5s;
                                                                                                     @include phone {
                                                                                                         left: 0.3534rem;
-                                                                                                        top: 27%;
+                                                                                                        top: 44%;
                                                                                                     }
                                                                                                     }
                                                                                                     input[type="radio"]:checked+.form__block_title_radio:before {

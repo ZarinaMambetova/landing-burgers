@@ -586,7 +586,8 @@
   line-height: 1.7; }
   @media (min-width: 480px) and (max-width: 767px) {
     .reviews__comment {
-      line-height: 1.5; } }
+      line-height: 1.2;
+      margin-bottom: 0.8rem; } }
   @media (min-width: 320px) and (max-width: 479px) {
     .reviews__comment {
       display: none; } }
@@ -666,11 +667,13 @@
   @media (min-width: 480px) and (max-width: 767px) {
     .burgers__col_info {
       text-align: center;
-      padding: 0rem 2.5rem; } }
+      margin-left: 0;
+      padding: 0rem 3.5rem; } }
   @media (min-width: 320px) and (max-width: 479px) {
     .burgers__col_info {
       text-align: center;
-      padding: 0rem 2.5rem; } }
+      padding: 0rem 2.5rem;
+      margin-left: 0; } }
 
 .composition__link {
   border-radius: 0.28571rem;
@@ -757,16 +760,13 @@
 .calories {
   position: absolute;
   text-align: center;
-  opacity: 0.5;
-  bottom: -3%; }
+  opacity: 0.5; }
   @media (min-width: 480px) and (max-width: 767px) {
     .calories {
-      right: 1%;
-      bottom: initial; } }
+      right: 1%; } }
   @media (min-width: 320px) and (max-width: 479px) {
     .calories {
-      right: 1%;
-      bottom: initial; } }
+      right: 1%; } }
 
 .calories__icon {
   width: 3.21429rem;
@@ -1410,7 +1410,7 @@
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
-      margin: 0rem 7.5rem; } }
+      margin: 0rem 2.5rem; } }
   @media (min-width: 320px) and (max-width: 479px) {
     .form__elem {
       -webkit-box-orient: vertical;
@@ -1526,11 +1526,7 @@
 
 .form__row_radio {
   display: inline-block;
-  margin-left: -1.14286rem;
   margin-right: 1.07143rem; }
-  @media (min-width: 320px) and (max-width: 479px) {
-    .form__row_radio {
-      margin-left: 2.21429rem; } }
 
 input[type="radio"] {
   opacity: 0;
@@ -1570,7 +1566,7 @@ input[type="radio"] {
   @media (min-width: 320px) and (max-width: 479px) {
     .form__block_title_radio:after {
       left: 0.3534rem;
-      top: 27%; } }
+      top: 44%; } }
 
 input[type="radio"]:checked + .form__block_title_radio:before {
   border: 0.07143rem solid #ffffff; }

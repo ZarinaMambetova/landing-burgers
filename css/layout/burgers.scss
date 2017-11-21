@@ -33,11 +33,13 @@
                                                                                                                     padding: 0 20px;
                                                                                                                     @include tablet {
                                                                                                                         text-align: center;
-                                                                                                                        padding: rem(0) rem(35);
+                                                                                                                        margin-left: 0;
+                                                                                                                        padding: 0rem 3.5rem;
                                                                                                                     }
                                                                                                                     @include phone {
                                                                                                                         text-align: center;
                                                                                                                         padding: rem(0) rem(35);
+                                                                                                                        margin-left: 0;
                                                                                                                     }
                                                                                                                 }
 
@@ -95,9 +97,7 @@
 
                                                                                                                 .burgers {
                                                                                                                     align-items: flex-end;
-                                                                                                                    
                                                                                                                     display: flex;
-                                                                                                                 
                                                                                                                     justify-content: center;
                                                                                                                     width: 85%;
                                                                                                                     margin-top: rem(72);
@@ -115,14 +115,11 @@
                                                                                                                     position: absolute;
                                                                                                                     text-align: center;
                                                                                                                     opacity: 0.5;
-                                                                                                                    bottom: -3%;
                                                                                                                     @include tablet {
                                                                                                                         right: 1%;
-                                                                                                                        bottom: initial;
                                                                                                                     }
                                                                                                                     @include phone {
                                                                                                                         right: 1%;
-                                                                                                                        bottom: initial;
                                                                                                                     }
                                                                                                                 }
 
