@@ -54,12 +54,32 @@ $(document).ready(function () {
     })
 });
 
+// $(document).ready(function () {
+//     $(".team-accord__link").on("click", function () {
+//         var $this = $(this);
+//         var items = $(".team-accord__description");
+//         items.removeClass("team-accord__description_active"); 
+//         items.removeClass("team-accord__item_active");
+//         $this.siblings(".team-accord__description").toggleClass("team-accord__description_active");
+//         $this.parent(".team-accord__item").toggleClass("team-accord__item_active");
+        
+//     }) 
+// });
+
 $(document).ready(function () {
     $(".team-accord__link").on("click", function () {
         var $this = $(this);
-        var items = $(".team-accord__description");
-        items.removeClass("team-accord__description_active");
-        $this.siblings(".team-accord__description").toggleClass("team-accord__description_active");
-        
+        var item = $this.closest('.team-accord__item');
+        var items = $(".team-accord__item");
+        var descs = $(".team-accord__description");
+        if (item.hasClass('.team-accord__item_active')) {
+            item.removeClass("team-accord__item_active");
+            $this.siblings(".team-accord__description").removeClass("team-accord__description_active");
+        } else {
+            items.removeClass("team-accord__item_active");
+            descs.removeClass("team-accord__description_active");
+            $this.siblings(".team-accord__description").addClass("team-accord__description_active");
+            $this.parent(".team-accord__item").addClass("team-accord__item_active");
+        }
     })
 });

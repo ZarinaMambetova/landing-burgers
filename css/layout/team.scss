@@ -48,7 +48,6 @@
                                                                                             font-family: 'gagalinregular';
                                                                                             font-size: rem(14);
                                                                                             position: relative;
-                                                                    
                                                                                         }
 
                                                                                         .team-accord__posicion {
@@ -81,8 +80,6 @@
                                                                                             }
                                                                                         }
 
-                                                                                        
-
                                                                                         .team-accord__item,
                                                                                         .team-accord__link {
                                                                                             text-decoration: none;
@@ -99,7 +96,7 @@
                                                                                         .team-accord__description {
                                                                                             display: flex;
                                                                                             margin-top: rem(15);
-                                                                                             margin-right: 5px;
+                                                                                            margin-right: 5px;
                                                                                             overflow: hidden;
                                                                                             height: 0;
                                                                                             @include tablet {
@@ -122,15 +119,11 @@
                                                                                             height: rem(100);
                                                                                         }
 
-                                                                                
-
                                                                                         .team-accord__info {
                                                                                             @include tablet {
                                                                                                 margin: rem(15) rem(0);
                                                                                             }
                                                                                         }
-
-                                                                                      
 
                                                                                         .team-accord__name:before,
                                                                                         .team-accord__name:after {
@@ -166,10 +159,11 @@
                                                                                             border-top: 0rem solid transparent;
                                                                                         } 
 
-
                                                                                         .team-accord__description_active {
                                                                                             overflow: visible;
                                                                                             height: 100%;
                                                                                         }
 
-                                                                                        
+                                                                                        .team-accord__item_active .team-accord__name::before {
+                                                                                            transform: rotate(-90deg);
+                                                                                        }

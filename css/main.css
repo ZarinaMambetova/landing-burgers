@@ -345,7 +345,7 @@
 
 .main__photo {
   height: 100%;
-  width: 60%; }
+  width: 50%; }
   @media (min-width: 480px) and (max-width: 767px) {
     .main__photo {
       width: initial;
@@ -473,7 +473,8 @@
   padding-bottom: 5.71429rem; }
   @media (min-width: 320px) and (max-width: 479px) {
     .section__title_we {
-      padding-bottom: 1.07143rem; } }
+      padding-bottom: 1.07143rem;
+      margin-top: 20px; } }
 
 .about__name {
   font-family: 'lifehackmedium';
@@ -573,6 +574,10 @@
   font-family: 'gagalinregular';
   font-size: 1rem;
   margin-bottom: 0.71429rem; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .reviews__name {
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem; } }
   @media (min-width: 320px) and (max-width: 479px) {
     .reviews__name {
       font-size: 1.71429rem;
@@ -632,13 +637,19 @@
   padding: 1.42857rem 2.14286rem;
   -webkit-transition: .5s;
   -o-transition: .5s;
-  transition: .5s;
-  width: 33.57143rem;
-  height: 18.21429rem; }
+  transition: .5s; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .modal_reviews {
+      width: 32.57143rem;
+      height: 16.21429rem; } }
 
 .reviews__name_modal,
 .reviews__comment_modal {
   color: #2f3234; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .reviews__name_modal,
+    .reviews__comment_modal {
+      line-height: 1.7; } }
 
 .fancybox-close-small {
   position: absolute;
@@ -1172,6 +1183,11 @@
   overflow: visible;
   height: 100%; }
 
+.team-accord__item_active .team-accord__name::before {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
 .section_menu {
   background: url(./../images/bg/deaf2.png) 50% 50% no-repeat;
   height: 100vh;
@@ -1284,9 +1300,9 @@
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  -webkit-transition-delay: 0.5s;
-  -o-transition-delay: 0.5s;
-  transition-delay: 0.5s; }
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s; }
 
 .section_contacts {
   background: url(./../images/bg/Layer-4.png) 50% 50% no-repeat;
@@ -1311,9 +1327,13 @@
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .footer {
+      height: 5.3rem;
+      padding-bottom: 14px; } }
   @media (min-width: 320px) and (max-width: 479px) {
     .footer {
-      height: 6.5rem;
+      height: 7rem;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
@@ -1334,9 +1354,6 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
-  @media (min-width: 480px) and (max-width: 767px) {
-    .footer__container {
-      padding: 0rem 1.07143rem; } }
   @media (min-width: 320px) and (max-width: 479px) {
     .footer__container {
       -webkit-box-orient: vertical;
@@ -1349,9 +1366,6 @@
   font-family: 'ubuntulight';
   color: #ffffff;
   font-size: 1rem; }
-  @media (min-width: 320px) and (max-width: 479px) {
-    .adress {
-      margin-bottom: 0.42857rem; } }
 
 .footer__col {
   width: 50%; }
@@ -1385,6 +1399,9 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media (min-width: 320px) and (max-width: 479px) {
+    .footer__col_social {
+      margin-top: 0rem; } }
 
 .social__link_icon {
   fill: #585858;
