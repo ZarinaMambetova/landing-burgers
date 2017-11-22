@@ -545,7 +545,7 @@
       height: 25%; } }
 
 .reviews__text {
-  padding: 1.78571rem 1.42857rem 0rem 1.42857rem;
+  padding: 1.5rem 0.7rem 0rem 0.7rem;
   opacity: 0;
   height: 100%;
   position: absolute;
@@ -583,7 +583,7 @@
   color: #ffffff;
   font-family: 'ubuntulight';
   margin-bottom: 1.07143rem;
-  line-height: 1.7; }
+  line-height: 1.5; }
   @media (min-width: 480px) and (max-width: 767px) {
     .reviews__comment {
       line-height: 1.2;
@@ -612,8 +612,46 @@
 .modal_reviews {
   display: none; }
 
-.fancybox-overlay {
-  background: rgba(47, 50, 52, 0.92); }
+.fancybox-bg {
+  background: rgba(47, 50, 52, 0.92);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0; }
+
+.modal_reviews {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.35714rem;
+  padding: 1.42857rem 2.14286rem;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  width: 33.57143rem;
+  height: 18.21429rem; }
+
+.reviews__name_modal,
+.reviews__comment_modal {
+  color: #2f3234; }
+
+.fancybox-close-small {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(./../images/icon/close.svg) 50% 50% no-repeat;
+  width: 17px;
+  height: 17px;
+  padding: 20px 20px;
+  border: none;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
 
 .section_burgers {
   background-image: -webkit-linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
@@ -1006,15 +1044,7 @@
   color: #ffffff;
   font-family: 'gagalinregular';
   font-size: 1rem;
-  position: relative;
-  display: block;
-  left: 1.42857rem; }
-  @media (min-width: 480px) and (max-width: 767px) {
-    .team-accord__name {
-      left: 0; } }
-  @media (min-width: 320px) and (max-width: 479px) {
-    .team-accord__name {
-      left: 0; } }
+  position: relative; }
 
 .team-accord__posicion {
   font-size: 1rem;
@@ -1043,9 +1073,6 @@
       padding-bottom: 3.42857rem;
       margin-top: 3.42857rem; } }
 
-.team-accord__item {
-  overflow: hidden; }
-
 .team-accord__item,
 .team-accord__link {
   text-decoration: none;
@@ -1066,9 +1093,9 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 1.07143rem;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s; }
+  margin-right: 5px;
+  overflow: hidden;
+  height: 0; }
   @media (min-width: 480px) and (max-width: 767px) {
     .team-accord__description {
       -webkit-box-orient: vertical;
@@ -1100,15 +1127,9 @@
   width: 7.14286rem;
   height: 7.14286rem; }
 
-.accordion--active .accordion__expander {
-  height: 100%; }
-
 @media (min-width: 480px) and (max-width: 767px) {
   .team-accord__info {
     margin: 1.07143rem 0rem; } }
-
-.accordion--active {
-  height: initial !important; }
 
 .team-accord__name:before,
 .team-accord__name:after {
@@ -1122,11 +1143,11 @@
   @media (min-width: 480px) and (max-width: 767px) {
     .team-accord__name:before,
     .team-accord__name:after {
-      left: 17.5rem; } }
+      left: -20px; } }
   @media (min-width: 320px) and (max-width: 479px) {
     .team-accord__name:before,
     .team-accord__name:after {
-      left: 9rem; } }
+      left: -20px; } }
 
 .team-accord__name:before {
   border-top: 0.4375rem solid #f9b43b;
@@ -1147,10 +1168,9 @@
   border-right: 0.3125rem solid transparent;
   border-top: 0rem solid transparent; }
 
-.accordion--active .team-accord__name:before {
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg); }
+.team-accord__description_active {
+  overflow: visible;
+  height: 100%; }
 
 .section_menu {
   background: url(./../images/bg/deaf2.png) 50% 50% no-repeat;
@@ -1184,20 +1204,24 @@
   -ms-transform: translateY(-50%) translateX(-35%) rotate(-90deg);
   transform: translateY(-50%) translateX(-35%) rotate(-90deg);
   white-space: nowrap; }
+  @media (min-width: 320px) and (max-width: 479px) {
+    .menu-accord__title {
+      font-size: 1.6rem; } }
 
 .menu-accord__text {
   font-size: 1rem;
   color: #ffffff;
   font-family: 'ubuntulight';
   padding: 4.28571rem 2.42857rem;
-  line-height: 2; }
+  line-height: 2;
+  opacity: 0; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .menu-accord__text {
+      padding: 1.28571rem 1.42857rem; } }
   @media (min-width: 320px) and (max-width: 479px) {
     .menu-accord__text {
-      padding: 2.28571rem 2.42857rem; } }
-
-.menu-accord__description {
-  background-color: #2f3234;
-  opacity: 0.93; }
+      font-size: 0.9rem;
+      padding: 1.28571rem 1.42857rem; } }
 
 .menu-accord__item,
 .menu-accord__link {
@@ -1208,22 +1232,61 @@
 .menu-accord__link {
   width: 5.71429rem;
   background-size: cover; }
+  @media (min-width: 320px) and (max-width: 479px) {
+    .menu-accord__link {
+      width: 3rem; } }
 
-@media (min-width: 320px) and (max-width: 479px) {
-  .menu-accord__item-type-active {
-    left: 25%;
-    z-index: 200; } }
+.menu-accord__description {
+  background-color: #2f3234;
+  opacity: 0.93;
+  overflow: hidden;
+  width: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .menu-accord__description {
+      -webkit-transition: initial;
+      -o-transition: initial;
+      transition: initial; } }
+  @media (min-width: 320px) and (max-width: 479px) {
+    .menu-accord__description {
+      left: 25%;
+      z-index: 200;
+      -webkit-transition: initial;
+      -o-transition: initial;
+      transition: initial; } }
 
 .menu-accord__item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  overflow: hidden; }
+  display: flex; }
 
 .menu__title {
   color: #ffffff;
   margin-top: 8.21429rem; }
+
+.menu-accord__description_active {
+  overflow: visible;
+  width: 540px; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .menu-accord__description_active {
+      width: 100%;
+      z-index: 500; } }
+  @media (min-width: 320px) and (max-width: 479px) {
+    .menu-accord__description_active {
+      width: 100%;
+      z-index: 500; } }
+
+.menu-accord__description_active .menu-accord__text {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s; }
 
 .section_contacts {
   background: url(./../images/bg/Layer-4.png) 50% 50% no-repeat;

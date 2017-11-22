@@ -39,25 +39,27 @@ $('.owl-carousel').owlCarousel({
 
 })
 
-$('.accordion').asAccordion({
-
-    namespace: 'accordion',
-    
-
-});
-
-$('.menu-accord').asAccordion({
-
-    namespace: 'accordion',
-    direction: 'horizontal',
-    speed: 500,
-    easing: 'ease-in-out',
-    
-});
-
 $(function() {
         $("[data-fancybox]").fancybox({
         // Options will go here
     });
 })
 
+$(document).ready(function () {
+    $(".menu-accord__link").on("click", function () {
+        var $this = $(this);
+        var items = $(".menu-accord__description");
+        items.removeClass("menu-accord__description_active");
+        $this.siblings(".menu-accord__description").toggleClass("menu-accord__description_active");
+    })
+});
+
+$(document).ready(function () {
+    $(".team-accord__link").on("click", function () {
+        var $this = $(this);
+        var items = $(".team-accord__description");
+        items.removeClass("team-accord__description_active");
+        $this.siblings(".team-accord__description").toggleClass("team-accord__description_active");
+        
+    })
+});

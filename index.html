@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Бургерная</title>
-    <link rel="stylesheet" href="css/asAccordion.css">
+    <!-- <link rel="stylesheet" href="css/asAccordion.css"> -->
 <link rel="stylesheet" href="css/owl.carousel.css">
 <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/onepage-scroll.css">
@@ -620,10 +620,11 @@
         <div class="container team__container">
             <div class="team__content">
                 <h1 class="section__title team__title">КОМАНДА</h1>
-                <ul data-direction="vertical" class="accordion accordion--basic accordion--vertical team-accord">
-                    <li class="accordion__panel team-accord__item">
-                         <span class="accordion__heading team-accord__name">Дэниэл Редклиф</span>
-                        <div class="accordion__expander team-accord__description">
+                <ul class="team-accord">
+                    <li class="team-accord__item">
+                        <a href="#" class="team-accord__link">
+                         <span class="team-accord__name">Дэниэл Редклиф</span></a>
+                        <div class="team-accord__description">
                             <div class="team-accord__photo">
                                 <img src="images/content/aphex.png" alt="photo" class="team-accord__image">
                             </div>
@@ -633,10 +634,11 @@
                             </div>
                         </div>
                     </li>
-                    <li class="accordion__panel team-accord__item">
-                            <span class="accordion__heading team-accord__name">Дэниэл Редклиф</span>
-                        <div class="accordion__expander team-accord__description">
-                            <div class="team-accord__description">
+                    <li class="team-accord__item">
+                        <a href="#" class="team-accord__link">
+                            <span class="team-accord__name">Дэниэл Редклиф</span></a>
+                        <div class="team-accord__description">
+                             <div class="team-accord__photo">
                                 <img src="images/content/aphex.png" alt="photo" class="team-accord__image">
                             </div>
                             <div class="team-accord__info">
@@ -645,9 +647,10 @@
                             </div>
                         </div>
                     </li>
-                    <li class="accordion__panel team-accord__item">
-                            <span class="accordion__heading team-accord__name">Дэниэл Редклиф</span>
-                        <div class="accordion__expander team-accord__description">
+                    <li class=" team-accord__item">
+                        <a href="#" class="team-accord__link">
+                            <span class="team-accord__name">Дэниэл Редклиф</span></a>
+                        <div class=" team-accord__description">
                             <div class="team-accord__photo">
                                 <img src="images/content/aphex.png" alt="photo" class="team-accord__image">
                             </div>
@@ -657,9 +660,10 @@
                             </div>
                         </div>
                     </li>
-                    <li class="accordion__panel team-accord__item ">
-                            <span class="accordion__heading team-accord__name">Дэниэл Редклиф</span>
-                         <div class="accordion__expander team-accord__description">
+                    <li class="team-accord__item">
+                        <a href="#" class="team-accord__link">
+                            <span class="team-accord__name">Дэниэл Редклиф</span></a>
+                         <div class="team-accord__description">
                             <div class="team-accord__photo">
                                 <img src="images/content/aphex.png" alt="photo" class="team-accord__image">
                             </div>
@@ -670,19 +674,34 @@
                         </div>
                     </li>
                 </ul>
+                </div>
             </div>
-        </div>
+       
     </section>
 
     <section class="section section_menu">
         <div class="container menu__container">
             <h2 class="section__title menu__title">МЕНЮ</h2>
-            <ul data-direction="horizontal" class="-accordion -accordion--basic -accordion--horizontal menu-accord">
-                <li class="-accordion__panel menu-accord__item menu-accord__item-type-active" style="background-image:url(images/bg/for-meat.png)">
-          
-                        <span class="-accordion__heading menu-accord__title">ДЛЯ МЯСОЕДОВ</span>
-                   
-                    <div class="-accordion__expander menu-accord__description">
+            <ul  class=" menu-accord">
+                <li class="menu-accord__item">
+<a href="#" class="menu-accord__link" style="background-image:url(images/bg/for-meat.png)">
+    <span class="menu-accord__title">ДЛЯ МЯСОЕДОВ</span>
+</a>
+                    <div class="menu-accord__description">
+                        <p class="menu-accord__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
+                            механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал
+                            особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания,
+                            как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический
+                            характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический
+                            субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                        </p> 
+                    </div>
+                </li>
+                <li class="menu-accord__item">
+                    <a href="#" class="menu-accord__link" style="background-image:url(images/bg/for-vegan.png)">
+                        <span class="menu-accord__title">ВЕГЕТАРИАНСКОЕ</span>
+                    </a>
+                    <div class="menu-accord__description">
                         <p class="menu-accord__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
                             механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал
                             особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания,
@@ -692,25 +711,11 @@
                         </p>
                     </div>
                 </li>
-                <li class="-accordion__panel menu-accord__item" style="background-image:url(images/bg/for-vegan.png)">
-         
-                        <span class="-accordion__heading menu-accord__title">ВЕГЕТАРИАНСКОЕ</span>
-                   
-                    <div class="-accordion__expander menu-accord__description">
-                        <p class="menu-accord__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
-                            механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал
-                            особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания,
-                            как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический
-                            характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический
-                            субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
-                        </p>
-                    </div>
-                </li>
-                <li class="-accordion__panel menu-accord__item" style="background-image:url(images/bg/for-diet.png)">
-                   
-                        <span class="-accordion__heading menu-accord__title">ДИЕТИЧЕСКОЕ</span>
-                 
-                    <div class="-accordion__expander menu-accord__description">
+                <li class="menu-accord__item">
+                    <a href="#" class="menu-accord__link" style="background-image:url(images/bg/for-diet.png)">
+                        <span class="menu-accord__title">ДИЕТИЧЕСКОЕ</span>
+                    </a>
+                    <div class="menu-accord__description">
                         <p class="menu-accord__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
                             механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал
                             особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания,
@@ -743,7 +748,7 @@
                     </div>
                     <p class="reviews__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <a href="#" class="reviews__button">ПОДРОБНЕЕ</a>
+                    <a data-fancybox data-src="#hidden-content" class="reviews__button" href="javascript:;">ПОДРОБНЕЕ</a>
                 </div>
             </li>
             <li class="reviews__item" style="background-image:url(images/bg/photo-3.png)">
@@ -753,7 +758,7 @@
                     </div>
                     <p class="reviews__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <a href="#" class="reviews__button">ПОДРОБНЕЕ</a>
+                    <a data-fancybox data-src="#hidden-content" class="reviews__button" href="javascript:;">ПОДРОБНЕЕ</a>
                 </div>
             </li>
             <li class="reviews__item" style="background-image:url(images/bg/photo-4.png)">
@@ -763,7 +768,7 @@
                     </div>
                     <p class="reviews__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <a href="#" class="reviews__button">ПОДРОБНЕЕ</a>
+                    <a data-fancybox data-src="#hidden-content" class="reviews__button" href="javascript:;">ПОДРОБНЕЕ</a>
                 </div>
             </li>
             <li class="reviews__item" style="background-image:url(images/bg/photo-5.png)">
@@ -773,7 +778,7 @@
                     </div>
                     <p class="reviews__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <a href="#" class="reviews__button">ПОДРОБНЕЕ</a>
+                <a data-fancybox data-src="#hidden-content" class="reviews__button" href="javascript:;">ПОДРОБНЕЕ</a>
                 </div>
             </li>
             <li class="reviews__item" style="background-image:url(images/bg/photo-6.png)">
@@ -783,7 +788,7 @@
                     </div>
                     <p class="reviews__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <a href="#" class="reviews__button">ПОДРОБНЕЕ</a>
+                    <a data-fancybox data-src="#hidden-content" class="reviews__button" href="javascript:;">ПОДРОБНЕЕ</a>
                 </div>
             </li>
             <li class="reviews__item" style="background-image:url(images/bg/photo-7.png)">
@@ -793,7 +798,7 @@
                     </div>
                     <p class="reviews__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <a href="#" class="reviews__button">ПОДРОБНЕЕ</a>
+                    <a data-fancybox data-src="#hidden-content" class="reviews__button" href="javascript:;">ПОДРОБНЕЕ</a>
                 </div>
             </li>
             <li class="reviews__item" style="background-image:url(images/bg/photo-8.png)">
@@ -803,7 +808,7 @@
                     </div>
                     <p class="reviews__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
                         могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                    <a href="#" class="reviews__button">ПОДРОБНЕЕ</a>
+                    <a data-fancybox data-src="#hidden-content" class="reviews__button" href="javascript:;">ПОДРОБНЕЕ</a>
                 </div>
             </li>
         </ul>
@@ -891,19 +896,7 @@
 
     <section class="section section_contacts">
         <div class="container contacts__container">
-            <p>
-                <a data-fancybox data-src="#modal" href="javascript:;" class="btn">Open demo</a>
-            </p>
             
-            <div style="display: none;" id="modal">
-                <h2>Hello!</h2>
-                <p>You are awesome!</p>
-            </div>
-            
-            </div>
-            <div class="grid">
-            
-                <p>
             <footer class="footer">
                 <div class="container footer__container">
                     <div class="footer__col footer__col_address">
@@ -992,14 +985,15 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.onepage-scroll.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
-<script src="js/jquery-asAccordion.js"></script>
+<!-- <script src="js/jquery-asAccordion.js"></script> -->
     <script src="js/main.js"></script>
             <div id="hidden-content" class="modal_reviews">
                 <h3 class="reviews__name reviews__name_modal">
                     Константин Спилберг
                 </h3>
                 <p class="reviews__comment reviews__comment_modal">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
-                    такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                    такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
+                    мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
             
             </div>
 </body>
