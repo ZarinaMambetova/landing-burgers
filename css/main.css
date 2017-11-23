@@ -345,7 +345,7 @@
 
 .main__photo {
   height: 100%;
-  width: 50%; }
+  width: 65%; }
   @media (min-width: 480px) and (max-width: 767px) {
     .main__photo {
       width: initial;
@@ -1122,7 +1122,10 @@
   margin-top: 1.07143rem;
   margin-right: 5px;
   overflow: hidden;
-  height: 0; }
+  height: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
   @media (min-width: 480px) and (max-width: 767px) {
     .team-accord__description {
       -webkit-box-orient: vertical;
@@ -1422,7 +1425,10 @@
 .social__link_icon {
   fill: #585858;
   height: 1.42857rem;
-  width: 1.42857rem; }
+  width: 1.42857rem;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
 .social__link_icon:hover {
   fill: #ffffff; }
@@ -1741,7 +1747,7 @@ h3 {
   margin: 0 auto; }
 
 .container {
-  width: 95%;
+  width: 960px;
   margin: 0 auto;
   display: flex;
   padding: 0rem 0.71429rem;
