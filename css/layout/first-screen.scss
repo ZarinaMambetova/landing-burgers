@@ -4,7 +4,6 @@
                                                         min-height: 650px;
                                                         background-size: cover;
                                                         position: relative;
-                                              
                                                     }
 
                                                     .main {
@@ -36,7 +35,8 @@
                                                             font-size: rem(57);
                                                         }
                                                         @include phone {
-                                                            font-size: rem(54);
+                                                            font-size: 3.5rem;
+                                                            
                                                         }
                                                     }
 
@@ -50,7 +50,7 @@
                                                         bottom: rem(50);
                                                         transform: translateX(50%);
                                                         width: rem(29);
-                                                         height: rem(15);
+                                                        height: rem(15);
                                                         @include tablet {
                                                             bottom: 1.57143rem;
                                                         }
@@ -86,7 +86,7 @@
                                                             align-items: center;
                                                         }
                                                     }
- 
+
                                                     .main__photo {
                                                         height: 100%;
                                                         width: 50%;
@@ -97,7 +97,7 @@
                                                         @include phone {
                                                             margin-top: -4.14286rem;
                                                             width: initial;
-                                                        }
+                                                        } 
                                                     }
 
                                                     .main__img {
