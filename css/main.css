@@ -1207,6 +1207,9 @@
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
+.team-accord__item_active .team-accord__name {
+  color: #f9b43b; }
+
 .section_menu {
   background: url(./../images/bg/deaf2.png) 50% 50% no-repeat;
   height: 100vh;
@@ -1322,6 +1325,9 @@
   -webkit-transition-delay: 0.5s;
   -o-transition-delay: 0.5s;
   transition-delay: 0.5s; }
+
+.menu-accord__item_active .menu-accord__title {
+  color: #f9b43b; }
 
 .section_contacts {
   background: url(./../images/bg/Layer-4.png) 50% 50% no-repeat;

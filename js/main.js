@@ -45,17 +45,27 @@ $(function() {
     });
 })
 
-// accordion
+// accordion menu
 $(document).ready(function () {
     $(".menu-accord__link").on("click", function () {
         var $this = $(this);
-        var items = $(".menu-accord__description");
-        items.removeClass("menu-accord__description_active");
-        $this.siblings(".menu-accord__description").toggleClass("menu-accord__description_active");
+        var item = $(this).closest('.menu-accord__item');
+        var desc = $this.siblings(".menu-accord__description");
+        var items = $('.menu-accord__item');
+        var descs = $(".menu-accord__description");
+        if (item.hasClass('menu-accord__item_active')) {
+            item.removeClass('menu-accord__item_active')
+            desc.removeClass("menu-accord__description_active");
+        } else {
+            items.removeClass('menu-accord__item_active')
+            item.addClass('menu-accord__item_active')
+            descs.removeClass("menu-accord__description_active");
+            desc.addClass("menu-accord__description_active");
+        }
     })
 });
 
-
+// accordion team
 $(document).ready(function () {
     $(".team-accord__link").on("click", function () {
         var $this = $(this);
