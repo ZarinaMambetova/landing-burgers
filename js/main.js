@@ -83,3 +83,25 @@ $(document).ready(function () {
         }
     })
 });
+
+// map
+
+
+ ymaps.ready(init);
+
+var myMap;
+
+function init() {
+    myMap = new ymaps.Map("map", {
+        center: [55.73882420, 37.62639277],
+        zoom: 15
+    });
+    myMap.behaviors.disable('scrollZoom');
+    myPlacemark = new ymaps.Placemark([55.74134658, 37.63240893], {
+        hintContent: 'Москва!',
+        balloonContent: 'Пункт выдачи заказов'
+    });
+
+    myMap.geoObjects.add(myPlacemark);
+} 
+

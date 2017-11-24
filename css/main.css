@@ -1199,7 +1199,6 @@
   border-top: 0rem solid transparent; }
 
 .team-accord__description_active {
-  overflow: visible;
   height: 200px; }
 
 .team-accord__item_active .team-accord__name::before {
@@ -1330,10 +1329,7 @@
   color: #f9b43b; }
 
 .section_contacts {
-  background: url(./../images/bg/Layer-4.png) 50% 50% no-repeat;
   height: 100vh;
-  min-height: 46.42857rem;
-  background-size: cover;
   position: relative; }
 
 .footer {
