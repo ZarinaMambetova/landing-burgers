@@ -823,35 +823,35 @@
                         <div class="form__row">
                             <label class="form__block">
                                 <div class="form__block_title">Имя</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="name">
                             </label>
                             <label class="form__block">
                                 <div class="form__block_title">Телефон</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="phone">
                             </label>
                         </div>
                         <div class="form__row">
                             <label class="form__block">
                                 <div class="form__block_title">Улица</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="street">
                             </label>
                         </div>
                         <div class="form__row">
                             <label class="form__block">
                                 <div class="form__block_title">Дом</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="house">
                             </label>
                             <label class="form__block">
                                 <div class="form__block_title">Корпус</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="block">
                             </label>
                             <label class="form__block">
                                 <div class="form__block_title">Квартира</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="room">
                             </label>
                             <label class="form__block">
                                 <div class="form__block_title">Этаж</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="et">
                             </label>
                         </div>
                     </div>
@@ -861,8 +861,7 @@
                                 <label for="comment" class="form__block">
                                     <div class="form__block_title">Комментарий</div>
                                 </label>
-                                <textarea name="form-comment" id="comment" class="form__input form__input_textarea">
-                    </textarea>
+                                <textarea name="comment" id="comment" class="form__input form__input_textarea"></textarea>
                             </div>
                         </div>
                         <div class="form__row">
@@ -881,7 +880,8 @@
                         </div>
 
                         <div class="form__row form__row__buttons">
-                            <a href="#" class="button">ЗАКАЗАТЬ</a>
+                            
+                            <input type="submit" class="button form-submit" value="ЗАКАЗАТЬ">
                             <a href="#" class="button_clear">Очистить</a>
                         </div>
                     </div>
@@ -980,7 +980,7 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.onepage-scroll.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
-<!-- <script src="js/jquery-asAccordion.js"></script> -->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/main.js"></script>
             <div id="hidden-content" class="modal_reviews">
                 <h3 class="reviews__name reviews__name_modal">
@@ -990,7 +990,7 @@
                     такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
                     мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
             
-            </div>
+            </div> 
 </body>
 
 </html>

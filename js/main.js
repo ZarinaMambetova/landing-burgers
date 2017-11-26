@@ -94,14 +94,80 @@ var myMap;
 function init() {
     myMap = new ymaps.Map("map", {
         center: [55.73882420, 37.62639277],
-        zoom: 15
+        zoom: 16
     });
     myMap.behaviors.disable('scrollZoom');
-    myPlacemark = new ymaps.Placemark([55.74134658, 37.63240893], {
+    myPlacemark = new ymaps.Placemark([55.73849213, 37.63004046], {
         hintContent: 'Москва!',
         balloonContent: 'Пункт выдачи заказов'
+    }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: './../images/icon/map-marker.svg',
+            // Размеры метки.
+            iconImageSize: [47, 57],
+   
+    });
+    myMap.geoObjects.add(myPlacemark);
+
+    myMap.behaviors.disable('scrollZoom');
+    myPlacemark = new ymaps.Placemark([55.73950901, 37.62280922], {
+        hintContent: 'Москва!',
+        balloonContent: 'Пункт выдачи заказов'
+    }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: './../images/icon/map-marker.svg',
+            // Размеры метки.
+            iconImageSize: [47, 57],
+  
+    
+    });
+    myMap.geoObjects.add(myPlacemark);
+    
+    myMap.behaviors.disable('scrollZoom');
+    myPlacemark = new ymaps.Placemark([55.73673674, 37.62615662], {
+        hintContent: 'Москва!',
+        balloonContent: 'Пункт выдачи заказов'
+    }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: './../images/icon/map-marker.svg',
+            // Размеры метки.
+            iconImageSize: [47, 57],
+  
     });
 
     myMap.geoObjects.add(myPlacemark);
 } 
+
+// form 
+
+$("form").submit(function (event) {
+    var data=$(this).serializeArray();
+    event.preventDefault();
+
+    $.ajax({
+        type: "POST",
+        url: "form.php",
+        // передача в качестве объекта
+        // поля будут закодированые через encodeURIComponent автоматически
+        data: data,
+        success: function (msg) {
+            var messege = JSON.parse(msg);
+                  if (massege.status=="folse") {
+                alert(messege.text)
+            }
+            else {
+                alert ()
+            }
+        }
+    });
+});
 

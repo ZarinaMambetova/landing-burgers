@@ -121,7 +121,8 @@
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
-  padding: 0.71429rem 1.42857rem; }
+  padding: 0.71429rem 1.42857rem;
+  border: none; }
   @media (min-width: 480px) and (max-width: 767px) {
     .button {
       margin-right: 1.286rem; } }
@@ -1347,7 +1348,8 @@
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  z-index: 800; }
   @media (min-width: 480px) and (max-width: 767px) {
     .footer {
       height: 5.3rem;
