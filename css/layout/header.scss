@@ -1,0 +1,161 @@
+.header {
+    padding-top: rem(15);
+}
+
+.header__logo {
+    width: rem(92);
+    height: rem(69);
+    z-index: 1100;
+}
+
+.logo_image {
+    width: 100%;
+    height: 100%;
+}
+
+.header__container {
+    justify-content: space-between;
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+    @include tablet {
+        margin-right: 0.78571rem;
+    }
+}
+
+.navigation-list {
+    margin-right: rem(20);
+    display: flex;
+    @include tablet {
+        display: none;
+    }
+    @include phone {
+        display: none;
+    }
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "ubuntumedium";
+    font-size: 13px;
+    justify-content: space-around;
+    position: relative;
+}
+
+.navigation__item {
+    margin-left: rem(30);
+}
+
+.navigation__link:before {
+    content: "";
+    width: rem(3);
+    height: rem(3);
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: rem(-15);
+    transform: translateY(-50%);
+}
+
+.navigation__item:first-child .navigation__link:before {
+    display: none;
+}
+
+.button {
+    color: #ffffff; 
+    font-family: "ubuntumedium";
+    font-size: rem(13);
+    background-color: #e45028;
+    border-radius: rem(3);
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+    padding: rem(10) rem(20);
+    border: none;
+    @include tablet {
+        margin-right: 1.286rem;
+    }
+    @include phone {
+        margin-right: 1.286rem;
+    }
+}
+
+.button:hover {
+    background-color: #c1401e;
+}
+
+.hamburger {
+    flex-direction: column;
+    display: none;
+    @include tablet {
+        display: flex;
+    }
+    @include phone {
+        display: flex;
+    }
+}
+
+.hamburger__line {
+    width: rem(15);
+    height: rem(3);
+    background: #fff;
+    display: inline-block;
+    border-radius: rem(2);
+    margin-bottom: rem(5);
+    transition: all .5s linear;
+}
+
+.hamburger_active {
+    z-index: 999;
+}
+
+.hamburger_active .hamburger__line:nth-child(2n+0) {
+    opacity: 0;
+}
+
+.hamburger_active .hamburger__line:nth-child(1n+0) {
+    transform: rotate(45deg) translateY(13px);
+}
+
+.hamburger_active .hamburger__line:nth-child(3n+0) {
+    transform: rotate(-45deg) translateY(-12px);
+}
+
+.navigation-list_active {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 50, 52, 0.99);
+    z-index: 999;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navigation-list_active .navigation__link {
+    font-size: 24px;
+    font-family: 'ubunturegular';
+}
+
+.navigation-list_active .navigation__item {
+    margin-left: 0;
+    margin-bottom: 60px;
+}
+
+.navigation-list_active .navigation__link:before {
+    width: 0.5rem;
+    height: 0.5rem;
+    right: 50%;
+    bottom: 164%;
+    top: initial;
+    left: initial;
+}

@@ -1,0 +1,66 @@
+                                            @import "./layout/media.scss";
+                                            @import "./layout/fonts.scss";
+                                            @import "./layout/header.scss";
+                                            @import "./layout/first-screen.scss";
+                                            @import "./layout/nav_circle.scss";
+                                            @import "./layout/we.scss";
+                                            @import "./layout/reviews.scss";
+                                            @import "./layout/burgers.scss";
+                                            @import "./layout/team.scss";
+                                            @import "./layout/menu.scss";
+                                            @import "./layout/contacts.scss";
+                                            @import "./layout/order.scss";
+                                            p,
+                                            h1,
+                                            h2,
+                                            h3 {
+                                                margin: 0;
+                                            }
+
+                                            .html {
+                                                font-size: rem(16);
+                                                @include tablet {
+                                                    font-size: rem(15);
+                                                }
+                                                @include phone {
+                                                    font-size: rem(14);
+                                                }
+                                            }
+
+                                            .wrapper {
+                                                margin: 0 auto;
+                                            }
+
+                                            .container {
+                                                width: 960px;
+                                                margin: 0 auto;
+                                                display: flex;
+                                                padding: rem(0) rem(10);
+                                                display: -webkit-box;
+                                                display: -webkit-flex;
+                                                display: -ms-flexbox;
+                                                @include tablet {
+                                                    width: 95%;
+                                                }
+                                                @include phone {
+                                                    width: 95%;
+                                                }
+                                            }
+
+                                            .section__title {
+                                                font-family: "gagalinregular";
+                                                font-size: rem(72);
+                                                font-weight: normal;
+                                                @include tablet {
+                                                    font-size: rem(60);
+                                                }
+                                                @include phone {
+                                                    font-size: 3rem;
+                                                }
+                                            }
+
+                                            ul {
+                                                padding: 0;
+                                                margin: 0;
+                                                list-style: none;
+                                            }

@@ -1,0 +1,49 @@
+.section_we {
+  background: url(./../images/bg/bg-we.png);
+  height: 100vh;
+  background-size: cover;
+  min-height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.we__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.about-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+
+.about__item {
+  text-align: center;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3; }
+
+.section__title_we {
+  text-align: center;
+  padding-bottom: 80px; }
+
+.about__name {
+  font-family: 'lifehackmedium';
+  color: #2f3234;
+  font-size: 24.1px; }
+
+.about__text {
+  font-family: 'ubuntulight';
+  color: #848281;
+  font-size: 14.03px;
+  margin-top: 15px;
+  line-height: 2; }
+
+/*# sourceMappingURL=we.css.map */

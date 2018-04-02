@@ -1,0 +1,124 @@
+                                    .section_contacts {
+                                    
+                                    height: 100vh;
+                                    // min-height: rem(650);
+                                    
+                                    position: relative; 
+                                } 
+ 
+                                .footer {
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    margin-top: auto;
+                                    background-color: #1f2122;
+                                    display: flex;
+                                    height: rem(60);
+                                    justify-content: space-between;
+                                    z-index: 800;
+                                    @include tablet {
+                                        height: 5.3rem;
+                                        padding-bottom: 14px;
+                                    }
+                                    @include phone {
+                                        height: 7rem;
+                                        flex-direction: column;
+                                    }
+                                }
+
+                                .footer__container {
+                                    width: rem(940);
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    @include phone {
+                                        flex-direction: column;
+                                    }
+                                }
+
+                                .adress {
+                                    font-family: 'ubuntulight';
+                                    color: #ffffff;
+                                    font-size: rem(14);
+                                   
+                                }
+
+                                .footer__col {
+                                    width: 50%;
+                                    @include phone {
+                                        margin-top: 0.5rem;
+                                        text-align: center;
+                                        width: initial;
+                                    }
+                                }
+
+                                .contacts {
+                                    flex-direction: column;
+                                }
+
+                                .contacts__phone {
+                                    color: #e45028;
+                                    font-family: 'ubuntubold';
+                                    font-size: rem(14);
+                                    text-decoration: none;
+                                    margin-top: rem(5);
+                                }
+
+                                .footer__col_social {
+                                    color: #ffffff;
+                                    justify-content: flex-end;
+                                    display: flex;
+                                    @include phone {
+                                        margin-top: 0rem;}
+                                    }
+                                    .social__link_icon {
+                                        fill: #585858;
+                                        height: rem(20);
+                                        width: rem(20);
+                                        transition: 0.5s;
+                                    }
+                                    .social__link_icon:hover {
+                                        fill: #ffffff;
+                                    }
+                                    .social__list {
+                                        display: flex;
+                                    }
+                                    .social__item {
+                                        margin: rem(5);
+                                    }
+                                    .phone__link_icon {
+                                        fill: #e35028;
+                                        height: rem(12);
+                                        width: rem(13);
+                                    }
+                                    .animated-modal {
+                                        max-width: 550px;
+                                        border-radius: 4px;
+                                        overflow: hidden;
+                                        transform: translateY(-50px);
+                                        transition: all .7s;
+                                    }
+                                    .animated-modal h2,
+                                    .animated-modal p {
+                                        transform: translateY(-50px);
+                                        opacity: 0;
+                                        transition-property: transform, opacity;
+                                        transition-duration: .4s;
+                                    }
+                                    /* Final state */
+                                    .fancybox-slide--current .animated-modal,
+                                    .fancybox-slide--current .animated-modal h2,
+                                    .fancybox-slide--current .animated-modal p {
+                                        transform: translateY(0);
+                                        opacity: 1;
+                                    }
+                                    /* Reveal content with different delays */
+                                    .fancybox-slide--current .animated-modal h2 {
+                                        transition-delay: .1s;
+                                    }
+                                    .fancybox-slide--current .animated-modal p {
+                                        transition-delay: .3s;
+                                    }
+
+                                    

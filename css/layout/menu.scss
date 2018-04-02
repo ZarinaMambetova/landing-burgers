@@ -1,0 +1,112 @@
+                                                    .section_menu {
+                                                        background: url(./../images/bg/deaf2.png) 50% 50% no-repeat;
+                                                        height: 100vh;
+                                                        min-height: 650px;
+                                                        background-size: cover;
+                                                        position: relative;
+                                                    }
+
+                                                    .menu-accord {
+                                                        list-style-type: none;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        display: flex;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        right: 0;
+                                                        bottom: 0;
+                                                        height: 100%;
+                                                    }
+
+                                                    .menu-accord__title {
+                                                        color: #ffffff;
+                                                        font-family: 'gagalinregular';
+                                                        font-size: rem(40);
+                                                        display: inline-block;
+                                                        top: 50%;
+                                                        position: absolute;
+                                                        transform: translateY(-50%) translateX(-35%) rotate(-90deg);
+                                                        white-space: nowrap;
+                                                        @include phone {
+                                                            font-size: 1.6rem;
+                                                        }
+                                                    }
+
+                                                    .menu-accord__text {
+                                                        font-size: rem(14);
+                                                        color: #ffffff;
+                                                        font-family: 'ubuntulight';
+                                                        padding: rem(60) rem(34);
+                                                        line-height: 2;
+                                                        opacity: 0;
+                                                        @include tablet {
+                                                            padding: 1.28571rem 1.42857rem;
+                                                        }
+                                                        @include phone {
+                                                            font-size: 0.9rem;
+                                                            padding: 1.28571rem 1.42857rem;
+                                                        }
+                                                    }
+
+                                                    .menu-accord__item,
+                                                    .menu-accord__link {
+                                                        height: 100%;
+                                                        display: block;
+                                                        position: relative;
+                                                    }
+
+                                                    .menu-accord__link {
+                                                        width: rem(80);
+                                                        background-size: cover;
+                                                        @include phone {
+                                                            width: 3rem;
+                                                        }
+                                                    }
+
+                                                    .menu-accord__description {
+                                                        background-color: #2f3234;
+                                                        opacity: 0.93;
+                                                        overflow: hidden;
+                                                        width: 0;
+                                                        transition: 0.5s;
+                                                        @include tablet {
+                                                            transition: initial;
+                                                        }
+                                                        @include phone {
+                                                            left: 25%;
+                                                            z-index: 200;
+                                                            transition: initial;
+                                                        }
+                                                    }
+
+                                                    .menu-accord__item {
+                                                        display: flex; // overflow: hidden;
+                                                    }
+
+                                                    .menu__title {
+                                                        color: #ffffff;
+                                                        margin-top: rem(115);
+                                                    }
+
+                                                    .menu-accord__description_active {
+                                                        overflow: visible;
+                                                        width: 540px;
+                                                        @include tablet {
+                                                            width: 100%;
+                                                            z-index: 500;
+                                                        }
+                                                        @include phone {
+                                                            width: 100%;
+                                                            z-index: 500;
+                                                        }
+                                                    }
+
+                                                    .menu-accord__description_active .menu-accord__text {
+                                                        opacity: 1;
+                                                        transition: 0.5s;
+                                                        transition-delay: 0.5s;
+                                                    }
+
+                                                    .menu-accord__item_active .menu-accord__title {
+                                                         color: #f9b43b;
+                                                    }

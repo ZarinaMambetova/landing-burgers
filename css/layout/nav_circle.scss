@@ -1,0 +1,46 @@
+    .onepage-pagination {
+        position: fixed;
+        right: rem(50);
+        top: 5.57143rem;
+        z-index: 500;
+        @include tablet {
+            display: none;
+        }
+        @include phone {
+            display: none;
+        }
+    }
+
+    .onepage-pagination ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .onepage-pagination li a {
+        width: rem(5);
+        height: rem(5);
+        background: #ffffff;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .onepage-pagination li {
+        position: relative;
+    }
+
+    .onepage-pagination li a:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 0.9rem;
+        height: 0.9rem;
+        border: rem(1) solid transparent;
+        border-radius: 50%;
+        left: -0.35rem;
+        top: 0.16rem;
+    }
+
+    .onepage-pagination li a.active:after {
+        border-color: #ffffff;
+    }
